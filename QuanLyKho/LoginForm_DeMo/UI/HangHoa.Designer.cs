@@ -56,7 +56,7 @@
             this.panel1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(678, 100);
+            this.panel1.Size = new System.Drawing.Size(765, 100);
             this.panel1.TabIndex = 57;
             // 
             // label2
@@ -83,7 +83,7 @@
             this.panel2.Controls.Add(this.lbl_mahh);
             this.panel2.Location = new System.Drawing.Point(0, 98);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(678, 130);
+            this.panel2.Size = new System.Drawing.Size(762, 130);
             this.panel2.TabIndex = 58;
             // 
             // txtsoLuong
@@ -200,14 +200,14 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 234);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(678, 208);
+            this.dataGridView1.Size = new System.Drawing.Size(762, 270);
             this.dataGridView1.TabIndex = 59;
             // 
             // HangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(678, 446);
+            this.ClientSize = new System.Drawing.Size(765, 516);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
