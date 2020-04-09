@@ -30,14 +30,14 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panelControl = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.panelControl = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -66,61 +66,6 @@
             this.panel4.Size = new System.Drawing.Size(136, 464);
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(0, 385);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(133, 42);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Thoát";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(0, 298);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(133, 42);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Quản Lý Ncc";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(0, 201);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(133, 42);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Quản Lý Hàng";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(0, 115);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(133, 42);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Xuất Hàng";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(0, 29);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 42);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Nhập Hàng";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panelControl
             // 
@@ -155,6 +100,72 @@
             this.label1.TabIndex = 0;
             this.label1.Text = " QUẢN LÝ KHO";
             // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button6.Image = global::LoginForm_DeMo.Properties.Resources.close11;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(0, 385);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(133, 42);
+            this.button6.TabIndex = 5;
+            this.button6.Text = " Thoát";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button4.Image = global::LoginForm_DeMo.Properties.Resources.ncc;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(0, 298);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(133, 42);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "NCC";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button3.Image = global::LoginForm_DeMo.Properties.Resources.khohang;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 201);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(133, 42);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "   Kho Hàng";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button2.Image = global::LoginForm_DeMo.Properties.Resources.upload;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 115);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(133, 42);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "   Xuất Hàng";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button1.Image = global::LoginForm_DeMo.Properties.Resources.add_user;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 29);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(133, 42);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "   Nhập Hàng";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // button5
             // 
             this.button5.Image = global::LoginForm_DeMo.Properties.Resources.Office_Customer_Male_Light_icon;
@@ -172,6 +183,7 @@
             this.ClientSize = new System.Drawing.Size(835, 569);
             this.Controls.Add(this.panel1);
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
