@@ -28,3 +28,18 @@ C:\Users\Admin\source\repos\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI
 C:\Users\Admin\source\repos\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.GenerateResource.cache
 C:\Users\Admin\source\repos\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.exe
 C:\Users\Admin\source\repos\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.pdb
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\LoginForm_DeMo.exe.config
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\LoginForm_DeMo.exe
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\LoginForm_DeMo.pdb
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csprojAssemblyReference.cache
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Login.resources
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.HangHoa.resources
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Menu.resources
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.NhaCC.resources
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Properties.Resources.resources
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.NhapHang.resources
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.TaiKhoan.resources
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.XuatHang.resources
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.GenerateResource.cache
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.exe
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.pdb
