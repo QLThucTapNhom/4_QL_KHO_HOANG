@@ -8,11 +8,10 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>LoginForm_DeMo</RootNamespace>
     <AssemblyName>LoginForm_DeMo</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -53,10 +52,10 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\HangHoa.cs">
+    <Compile Include="HangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\HangHoa.Designer.cs">
+    <Compile Include="HangHoa.Designer.cs">
       <DependentUpon>HangHoa.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
@@ -65,10 +64,10 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\NhaCC.cs">
+    <Compile Include="NhaCC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\NhaCC.Designer.cs">
+    <Compile Include="NhaCC.Designer.cs">
       <DependentUpon>NhaCC.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -94,13 +93,13 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\HangHoa.resx">
+    <EmbeddedResource Include="HangHoa.resx">
       <DependentUpon>HangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\NhaCC.resx">
+    <EmbeddedResource Include="NhaCC.resx">
       <DependentUpon>NhaCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -161,36 +160,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Office-Customer-Male-Light-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\add_user.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\xuat_hang.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nhap_hang.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\add.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\upload.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\khohang.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ncc.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\thoat.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\close1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\close11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

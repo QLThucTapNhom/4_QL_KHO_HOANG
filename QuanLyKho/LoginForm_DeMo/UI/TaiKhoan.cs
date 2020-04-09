@@ -16,5 +16,10 @@ namespace LoginForm_DeMo.UI
         {
             InitializeComponent();
         }
+
+        private void TaiKhoan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
