@@ -52,13 +52,11 @@
             this.buttonhdxoa = new System.Windows.Forms.Button();
             this.buttonhdsua = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txtcttim = new System.Windows.Forms.TextBox();
             this.btnTimCT = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtctbh = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.txtctsp = new System.Windows.Forms.TextBox();
@@ -73,11 +71,10 @@
             this.txtctid = new System.Windows.Forms.TextBox();
             this.btnXoaCT = new System.Windows.Forms.Button();
             this.btnThemCT = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.LoadHD = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.LoadCT = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -87,7 +84,6 @@
             this.panel12.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -95,7 +91,7 @@
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoadHD)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoadCT)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -141,12 +137,13 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Lime;
-            this.button2.Location = new System.Drawing.Point(278, 248);
+            this.button2.Location = new System.Drawing.Point(300, 237);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(60, 30);
             this.button2.TabIndex = 53;
             this.button2.Text = "All";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel13
             // 
@@ -163,7 +160,6 @@
             this.txthdtim.Name = "txthdtim";
             this.txthdtim.Size = new System.Drawing.Size(81, 20);
             this.txthdtim.TabIndex = 43;
-            this.txthdtim.Text = "ID Cần Tìm";
             // 
             // button5
             // 
@@ -174,6 +170,7 @@
             this.button5.TabIndex = 30;
             this.button5.Text = "Tìm kiếm";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // panel8
             // 
@@ -236,11 +233,13 @@
             // 
             // txthddate
             // 
-            this.txthddate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txthddate.CustomFormat = "dd-MM-yyyy";
+            this.txthddate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.txthddate.Location = new System.Drawing.Point(109, 7);
             this.txthddate.Name = "txthddate";
             this.txthddate.Size = new System.Drawing.Size(95, 20);
             this.txthddate.TabIndex = 20;
+            this.txthddate.ValueChanged += new System.EventHandler(this.txthddate_ValueChanged);
             // 
             // label4
             // 
@@ -285,6 +284,7 @@
             this.buttonhdxem.TabIndex = 34;
             this.buttonhdxem.Text = "Xem chi tiết";
             this.buttonhdxem.UseVisualStyleBackColor = false;
+            this.buttonhdxem.Click += new System.EventHandler(this.buttonhdxem_Click);
             // 
             // button4
             // 
@@ -315,14 +315,14 @@
             this.buttonhdsua.TabIndex = 23;
             this.buttonhdsua.Text = "Sửa";
             this.buttonhdsua.UseVisualStyleBackColor = false;
+            this.buttonhdsua.Click += new System.EventHandler(this.buttonhdsua_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.panel6);
-            this.groupBox1.Controls.Add(this.panel5);
             this.groupBox1.Controls.Add(this.panel2);
+            this.groupBox1.Controls.Add(this.panel6);
             this.groupBox1.Controls.Add(this.panel3);
             this.groupBox1.Controls.Add(this.panel4);
             this.groupBox1.Controls.Add(this.panel1);
@@ -334,6 +334,17 @@
             this.groupBox1.TabIndex = 45;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chi Tiết Hóa Đơn";
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Lime;
+            this.button6.Location = new System.Drawing.Point(301, 242);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(60, 30);
+            this.button6.TabIndex = 55;
+            this.button6.Text = "All";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button3
             // 
@@ -349,7 +360,7 @@
             // 
             this.panel6.Controls.Add(this.txtcttim);
             this.panel6.Controls.Add(this.btnTimCT);
-            this.panel6.Location = new System.Drawing.Point(6, 230);
+            this.panel6.Location = new System.Drawing.Point(6, 225);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(235, 35);
             this.panel6.TabIndex = 45;
@@ -370,37 +381,13 @@
             this.btnTimCT.TabIndex = 30;
             this.btnTimCT.Text = "Tìm kiếm";
             this.btnTimCT.UseVisualStyleBackColor = false;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label15);
-            this.panel5.Controls.Add(this.txtctbh);
-            this.panel5.Location = new System.Drawing.Point(6, 185);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(235, 35);
-            this.panel5.TabIndex = 45;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(2, 12);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(104, 13);
-            this.label15.TabIndex = 19;
-            this.label15.Text = "Thời Gian Bảo Hành";
-            // 
-            // txtctbh
-            // 
-            this.txtctbh.Location = new System.Drawing.Point(109, 6);
-            this.txtctbh.Name = "txtctbh";
-            this.txtctbh.Size = new System.Drawing.Size(105, 20);
-            this.txtctbh.TabIndex = 43;
+            this.btnTimCT.Click += new System.EventHandler(this.btnTimCT_Click);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.txtctsp);
-            this.panel2.Location = new System.Drawing.Point(6, 60);
+            this.panel2.Location = new System.Drawing.Point(6, 19);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(235, 35);
             this.panel2.TabIndex = 45;
@@ -425,7 +412,7 @@
             // 
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.txtctsl);
-            this.panel3.Location = new System.Drawing.Point(6, 102);
+            this.panel3.Location = new System.Drawing.Point(6, 119);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(235, 35);
             this.panel3.TabIndex = 45;
@@ -450,7 +437,7 @@
             // 
             this.panel4.Controls.Add(this.label14);
             this.panel4.Controls.Add(this.txtctgia);
-            this.panel4.Location = new System.Drawing.Point(6, 144);
+            this.panel4.Location = new System.Drawing.Point(6, 174);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(235, 35);
             this.panel4.TabIndex = 45;
@@ -475,7 +462,7 @@
             // 
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtctid);
-            this.panel1.Location = new System.Drawing.Point(6, 19);
+            this.panel1.Location = new System.Drawing.Point(6, 70);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(235, 35);
             this.panel1.TabIndex = 44;
@@ -516,16 +503,6 @@
             this.btnThemCT.Text = "Thêm Chi Tiết";
             this.btnThemCT.UseVisualStyleBackColor = false;
             // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Lime;
-            this.button6.Location = new System.Drawing.Point(301, 242);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(60, 30);
-            this.button6.TabIndex = 55;
-            this.button6.Text = "All";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.LoadHD);
@@ -543,10 +520,11 @@
             this.LoadHD.Name = "LoadHD";
             this.LoadHD.Size = new System.Drawing.Size(374, 175);
             this.LoadHD.TabIndex = 1;
+            this.LoadHD.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.LoadHD_CellContentClick);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Controls.Add(this.LoadCT);
             this.groupBox3.Location = new System.Drawing.Point(401, 311);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(383, 198);
@@ -554,13 +532,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Các Chi Tiết";
             // 
-            // dataGridView1
+            // LoadCT
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 17);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(374, 175);
-            this.dataGridView1.TabIndex = 1;
+            this.LoadCT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.LoadCT.Location = new System.Drawing.Point(6, 17);
+            this.LoadCT.Name = "LoadCT";
+            this.LoadCT.Size = new System.Drawing.Size(374, 175);
+            this.LoadCT.TabIndex = 1;
+            this.LoadCT.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.LoadCT_CellContentClick);
             // 
             // label7
             // 
@@ -586,6 +565,7 @@
             this.Controls.Add(this.button1);
             this.Name = "XuatHang";
             this.Text = "XuatHang";
+            this.Load += new System.EventHandler(this.XuatHang_Load);
             this.groupBox2.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
@@ -600,8 +580,6 @@
             this.groupBox1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -613,7 +591,7 @@
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LoadHD)).EndInit();
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoadCT)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -649,9 +627,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox txtcttim;
         private System.Windows.Forms.Button btnTimCT;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtctbh;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtctsp;
@@ -669,7 +644,7 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView LoadHD;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView LoadCT;
         private System.Windows.Forms.Label label7;
     }
 }
