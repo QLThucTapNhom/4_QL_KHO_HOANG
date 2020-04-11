@@ -54,12 +54,12 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.txtcttim = new System.Windows.Forms.TextBox();
-            this.btnTimCT = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.txtctsp = new System.Windows.Forms.TextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.txtcttim = new System.Windows.Forms.TextBox();
+            this.btnTimCT = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.txtctsl = new System.Windows.Forms.TextBox();
@@ -83,8 +83,8 @@
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -123,6 +123,7 @@
             this.groupBox2.TabIndex = 44;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Hóa Đơn";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // button7
             // 
@@ -356,6 +357,31 @@
             this.button3.Text = "All";
             this.button3.UseVisualStyleBackColor = false;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.txtctsp);
+            this.panel2.Location = new System.Drawing.Point(6, 19);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(235, 35);
+            this.panel2.TabIndex = 45;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 14);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(74, 13);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Mã Sản Phẩm";
+            // 
+            // txtctsp
+            // 
+            this.txtctsp.Location = new System.Drawing.Point(109, 10);
+            this.txtctsp.Name = "txtctsp";
+            this.txtctsp.Size = new System.Drawing.Size(105, 20);
+            this.txtctsp.TabIndex = 43;
+            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.txtcttim);
@@ -382,31 +408,6 @@
             this.btnTimCT.Text = "Tìm kiếm";
             this.btnTimCT.UseVisualStyleBackColor = false;
             this.btnTimCT.Click += new System.EventHandler(this.btnTimCT_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.txtctsp);
-            this.panel2.Location = new System.Drawing.Point(6, 19);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(235, 35);
-            this.panel2.TabIndex = 45;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 14);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(74, 13);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Mã Sản Phẩm";
-            // 
-            // txtctsp
-            // 
-            this.txtctsp.Location = new System.Drawing.Point(109, 10);
-            this.txtctsp.Name = "txtctsp";
-            this.txtctsp.Size = new System.Drawing.Size(105, 20);
-            this.txtctsp.TabIndex = 43;
             // 
             // panel3
             // 
@@ -578,10 +579,10 @@
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
