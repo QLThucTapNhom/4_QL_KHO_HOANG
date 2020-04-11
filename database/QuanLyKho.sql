@@ -60,8 +60,8 @@ go
 
 create table NhapChiTiet
 (
-	SanPhamID nvarchar(128) foreign key references SanPham(SanPhamID),
 	IdNhap nvarchar(128) foreign key references HoaDonNhap(IdNhap),
+	SanPhamID nvarchar(128) foreign key references SanPham(SanPhamID),
 	SoLuong int null,
 	DonGia int null,
 	primary key(SanPhamID,IdNhap)
@@ -78,8 +78,8 @@ create table HoaDonXuat
 go
 create table XuatChiTiet
 (
-	SanPhamID nvarchar(128) foreign key references SanPham(SanPhamID),
 	IdXuat nvarchar(128) foreign key references HoaDonXuat(IdXuat),
+	SanPhamID nvarchar(128) foreign key references SanPham(SanPhamID),
 	SoLuong int null,
 	DonGia int null,
 	primary key(SanPhamID,IdXuat)
