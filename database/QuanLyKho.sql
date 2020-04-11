@@ -93,6 +93,7 @@ CREATE TABLE TaiKhoan(
 
 )
 go
+alter table NhaCungCap alter column TGHopDong nvarchar(50)
 
 insert into NhanVien values(N'NV01',N'Đàm Viết Tùng','1999-08-07',1,N'Tiếp Thị',N'Hà Nội','NhanVien1@gmail.com','012345679',3000000)
 insert into NhanVien values(N'NV02',N'Đàm Viết Độ','1999-09-07',1,N'Nhân Viên Kĩ Thuật',N'Hà Nội','NhanVien2@gmail.com','012345679',3000000)

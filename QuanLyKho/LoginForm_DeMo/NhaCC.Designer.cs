@@ -46,6 +46,8 @@
             this.txtmaNCC = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -73,6 +75,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.btnxoa);
             this.panel2.Controls.Add(this.btnsua);
             this.panel2.Controls.Add(this.btnthem);
@@ -88,14 +92,14 @@
             this.panel2.Controls.Add(this.txtmaNCC);
             this.panel2.Location = new System.Drawing.Point(1, 99);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(750, 142);
+            this.panel2.Size = new System.Drawing.Size(750, 227);
             this.panel2.TabIndex = 66;
             // 
             // btnxoa
             // 
             this.btnxoa.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnxoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxoa.Location = new System.Drawing.Point(574, 97);
+            this.btnxoa.Location = new System.Drawing.Point(504, 83);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(70, 33);
             this.btnxoa.TabIndex = 69;
@@ -106,7 +110,7 @@
             // 
             this.btnsua.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnsua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsua.Location = new System.Drawing.Point(470, 97);
+            this.btnsua.Location = new System.Drawing.Point(428, 83);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(70, 33);
             this.btnsua.TabIndex = 70;
@@ -117,7 +121,7 @@
             // 
             this.btnthem.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnthem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthem.Location = new System.Drawing.Point(360, 97);
+            this.btnthem.Location = new System.Drawing.Point(352, 83);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(70, 33);
             this.btnthem.TabIndex = 71;
@@ -126,7 +130,7 @@
             // 
             // txt_SDT
             // 
-            this.txt_SDT.Location = new System.Drawing.Point(442, 59);
+            this.txt_SDT.Location = new System.Drawing.Point(411, 52);
             this.txt_SDT.Multiline = true;
             this.txt_SDT.Name = "txt_SDT";
             this.txt_SDT.Size = new System.Drawing.Size(163, 25);
@@ -134,7 +138,7 @@
             // 
             // txt_email
             // 
-            this.txt_email.Location = new System.Drawing.Point(174, 104);
+            this.txt_email.Location = new System.Drawing.Point(110, 104);
             this.txt_email.Multiline = true;
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(161, 26);
@@ -142,7 +146,7 @@
             // 
             // txt_tenNCC
             // 
-            this.txt_tenNCC.Location = new System.Drawing.Point(174, 59);
+            this.txt_tenNCC.Location = new System.Drawing.Point(110, 59);
             this.txt_tenNCC.Multiline = true;
             this.txt_tenNCC.Name = "txt_tenNCC";
             this.txt_tenNCC.Size = new System.Drawing.Size(161, 25);
@@ -150,7 +154,7 @@
             // 
             // txt_diaChi
             // 
-            this.txt_diaChi.Location = new System.Drawing.Point(442, 12);
+            this.txt_diaChi.Location = new System.Drawing.Point(411, 7);
             this.txt_diaChi.Multiline = true;
             this.txt_diaChi.Name = "txt_diaChi";
             this.txt_diaChi.Size = new System.Drawing.Size(163, 26);
@@ -158,7 +162,7 @@
             // 
             // txt_maNCC
             // 
-            this.txt_maNCC.Location = new System.Drawing.Point(174, 12);
+            this.txt_maNCC.Location = new System.Drawing.Point(110, 12);
             this.txt_maNCC.Multiline = true;
             this.txt_maNCC.Name = "txt_maNCC";
             this.txt_maNCC.Size = new System.Drawing.Size(161, 26);
@@ -168,7 +172,7 @@
             // 
             this.txttenNCC.AutoSize = true;
             this.txttenNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttenNCC.Location = new System.Drawing.Point(98, 68);
+            this.txttenNCC.Location = new System.Drawing.Point(34, 68);
             this.txttenNCC.Name = "txttenNCC";
             this.txttenNCC.Size = new System.Drawing.Size(70, 16);
             this.txttenNCC.TabIndex = 62;
@@ -178,7 +182,7 @@
             // 
             this.txtmaHH.AutoSize = true;
             this.txtmaHH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmaHH.Location = new System.Drawing.Point(379, 22);
+            this.txtmaHH.Location = new System.Drawing.Point(303, 17);
             this.txtmaHH.Name = "txtmaHH";
             this.txtmaHH.Size = new System.Drawing.Size(57, 16);
             this.txtmaHH.TabIndex = 58;
@@ -188,17 +192,17 @@
             // 
             this.txtdonGia.AutoSize = true;
             this.txtdonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdonGia.Location = new System.Drawing.Point(379, 68);
+            this.txtdonGia.Location = new System.Drawing.Point(297, 54);
             this.txtdonGia.Name = "txtdonGia";
-            this.txtdonGia.Size = new System.Drawing.Size(51, 16);
+            this.txtdonGia.Size = new System.Drawing.Size(108, 16);
             this.txtdonGia.TabIndex = 59;
-            this.txtdonGia.Text = "Số ĐT";
+            this.txtdonGia.Text = "Hạn Hợp đồng";
             // 
             // txtngayLap
             // 
             this.txtngayLap.AutoSize = true;
             this.txtngayLap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtngayLap.Location = new System.Drawing.Point(98, 114);
+            this.txtngayLap.Location = new System.Drawing.Point(34, 114);
             this.txtngayLap.Name = "txtngayLap";
             this.txtngayLap.Size = new System.Drawing.Size(47, 16);
             this.txtngayLap.TabIndex = 60;
@@ -208,7 +212,7 @@
             // 
             this.txtmaNCC.AutoSize = true;
             this.txtmaNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmaNCC.Location = new System.Drawing.Point(98, 22);
+            this.txtmaNCC.Location = new System.Drawing.Point(34, 22);
             this.txtmaNCC.Name = "txtmaNCC";
             this.txtmaNCC.Size = new System.Drawing.Size(64, 16);
             this.txtmaNCC.TabIndex = 61;
@@ -232,6 +236,25 @@
             this.label1.Size = new System.Drawing.Size(261, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "NHÀ CUNG CẤP";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(588, 90);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(160, 26);
+            this.textBox1.TabIndex = 72;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(588, 46);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(83, 33);
+            this.button1.TabIndex = 73;
+            this.button1.Text = "Tìm Kiếm";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // NhaCC
             // 
@@ -271,5 +294,7 @@
         private System.Windows.Forms.Label txtmaNCC;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
