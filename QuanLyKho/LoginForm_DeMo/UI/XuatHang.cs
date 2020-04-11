@@ -112,6 +112,7 @@ namespace LoginForm_DeMo.UI
 
         private void LoadHD_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            txthdtien.ReadOnly = true;
             int i;
             i = LoadHD.CurrentRow.Index;
             txthdid.Text = LoadHD.Rows[i].Cells[0].Value.ToString();
@@ -122,6 +123,7 @@ namespace LoginForm_DeMo.UI
 
         private void LoadCT_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            txtctgia.ReadOnly = true;
             int i;
             i = LoadCT.CurrentRow.Index;
             txtctid.Text = LoadCT.Rows[i].Cells[0].Value.ToString();
@@ -167,9 +169,109 @@ namespace LoginForm_DeMo.UI
 
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
+        private void buttonhdxoa_Click(object sender, EventArgs e)
         {
+            if (txthdid.Text == "")
+            {
+                MessageBox.Show("Chưa Có Hóa Đơn Cần Xóa");
+            }
+            else
+            {
+                //em đã tạo 1 trigger để xóa Hóa đơn trong modul3
+                /*Vì khi xóa 1 hóa đơn cần xóa các chi tiết và trả lại các giá trị cho Sản Phẩm như hàng tồn kho .*/
+                command = connection.CreateCommand();
+                command.CommandText = "delete HoaDonXuat  where IdXuat = N'" + txthdid.Text + "'";
+                command.ExecuteNonQuery();
+                LoadHoaDon();
+                LoadChiTietHD();
+                MessageBox.Show("Xóa Hóa đơn thành công !");
 
+            }
+        }
+
+        private void btnThemCT_Click(object sender, EventArgs e)
+        {
+            if (txtctid.Text == "")
+            {
+                MessageBox.Show(" Bạn Chưa Nhập ID Muốn Thêm chi tiết vào ");
+            }
+            else
+            {
+
+                /*Việc thêm chi tiết cũng khá quan trọng vì ta thêm chi tiết thì ta cần thêm giá tiền vào hóa đơn của nó  và update
+                 lại giá trị của Hàng Tồn kho của Sản Phẩm . Vậy nên em đã tạo 1 trigger cho việc thêm chi tiết ở modul 3*/
+                command = connection.CreateCommand();
+                command.CommandText = "insert into XuatChiTiet(IdXuat,SanPhamID,SoLuong) values(N'" + txtctid.Text + "', N'" + txtctsp.Text + "', " + txtctsl.Text + ")";
+                command.ExecuteNonQuery();
+                LoadChiTietHD();
+                LoadHoaDon();
+                MessageBox.Show(" Thêm Chi Tiết HD thành công !");
+
+            }
+        }
+
+        private void btnXoaCT_Click(object sender, EventArgs e)
+        {
+            if (txtctid.Text == "")
+            {
+                MessageBox.Show("Chưa Có Hóa Đơn Cần Xóa");
+            }
+            else
+            {
+                //em đã tạo 1 trigger để xóa Hóa đơn chi tiết trong modul 3 
+                /*khi xóa chi tiết ta cần trả lại hàng tồn kho cho sản phẩm và update lại giá tiền ở hóa đơn*/
+                command = connection.CreateCommand();
+                command.CommandText = "delete XuatChiTiet  where IdXuat = N'" + txtctid.Text + "' and SanPhamID = N'" + txtctsp.Text + "'";
+                command.ExecuteNonQuery();
+                LoadChiTietHD();
+                LoadHoaDon();
+                MessageBox.Show("Xóa Chi Tiết Hóa đơn thành công !");
+
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (txtctid.Text == "")
+            {
+                MessageBox.Show("Chưa Có Hóa Đơn Cần Thêm");
+            }
+            else
+            {
+                string ngay = txthddate.Value.ToString("MM-dd-yyy");
+
+                /*Vì quá trình thêm khá phức tạp khi thêm 1 hóa đơn thì phải xem số lượng kho Sản Phẩm
+                 có đủ không không đủ thì thông báo và đủ thì bán và giảm số lượng tồn đi sau đó update đơn giá
+                 vào Chi Tiết HD từ đó tính tổng tiền vào HD cần bán . Nên em đã tạp 1 trigger cho quá trình thêm này 
+                 vào datatable của bài cho tiện trong quá trình sử dụng ở modul 3. */
+                command = connection.CreateCommand();
+                command.CommandText = "insert into HoaDonXuat(IdXuat,NgayHD,NhanVienID) values(N'"+txthdid.Text+"','" + ngay + "', N'" + txthdnv.Text + "')" +
+                    "insert into XuatChiTiet(IdXuat,SanPhamID,SoLuong) values(N'" + txtctid.Text + "', N'" + txtctsp.Text + "', " + txtctsl.Text + ")";
+                command.ExecuteNonQuery();
+                LoadChiTietHD();
+                LoadHoaDon();
+                MessageBox.Show(" Thêm Hóa đơn thành công !");
+            }
+        }
+
+        private void btnXoaCT_Click_1(object sender, EventArgs e)
+        {
+            if (txtctid.Text == "")
+            {
+                MessageBox.Show("Chưa Có Hóa Đơn Cần Xóa");
+            }
+            else
+            {
+                //em đã tạo 1 trigger để xóa Hóa đơn chi tiết trong modul 3 
+                /*khi xóa chi tiết ta cần trả lại hàng tồn kho cho sản phẩm và update lại giá tiền ở hóa đơn*/
+                command = connection.CreateCommand();
+                command.CommandText = "delete XuatChiTiet  where IdXuat = N'" + txtctid.Text + "' and SanPhamID = N'" + txtctsp.Text + "'";
+                command.ExecuteNonQuery();
+                LoadChiTietHD();
+                LoadHoaDon();
+                MessageBox.Show("Xóa Chi Tiết Hóa đơn thành công !");
+
+            }
         }
     }
 }

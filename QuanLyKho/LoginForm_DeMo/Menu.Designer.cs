@@ -37,6 +37,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panelControl = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -54,6 +55,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(932, 622);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel4
             // 
@@ -136,6 +138,7 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.button5);
             this.panel3.Controls.Add(this.label1);
             this.panel3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
@@ -144,10 +147,22 @@
             this.panel3.Size = new System.Drawing.Size(926, 87);
             this.panel3.TabIndex = 3;
             // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Red;
+            this.button7.CausesValidation = false;
+            this.button7.Location = new System.Drawing.Point(784, 49);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 25);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "Thoát";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // button5
             // 
             this.button5.Image = global::LoginForm_DeMo.Properties.Resources.Office_Customer_Male_Light_icon;
-            this.button5.Location = new System.Drawing.Point(767, 15);
+            this.button5.Location = new System.Drawing.Point(876, 3);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(47, 46);
             this.button5.TabIndex = 2;
@@ -196,5 +211,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button7;
     }
 }

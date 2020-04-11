@@ -98,5 +98,19 @@ namespace LoginForm_DeMo
             TaiKhoan tk = new TaiKhoan();
             tk.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            DialogResult h = MessageBox.Show("Do you wat exit program ?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+            if (h == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
