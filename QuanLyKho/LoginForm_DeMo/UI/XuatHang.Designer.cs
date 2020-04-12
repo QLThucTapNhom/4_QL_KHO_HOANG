@@ -52,6 +52,10 @@
             this.buttonhdxoa = new System.Windows.Forms.Button();
             this.buttonhdsua = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtctid = new System.Windows.Forms.TextBox();
+            this.btnXoaCT = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -72,10 +76,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.LoadCT = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtctid = new System.Windows.Forms.TextBox();
-            this.btnXoaCT = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -83,6 +84,7 @@
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -91,7 +93,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.LoadHD)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoadCT)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -337,6 +338,42 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chi Tiết Hóa Đơn";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.txtctid);
+            this.panel1.Location = new System.Drawing.Point(6, 14);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(235, 35);
+            this.panel1.TabIndex = 46;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 13);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 13);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Mã Hóa Đơn";
+            // 
+            // txtctid
+            // 
+            this.txtctid.Location = new System.Drawing.Point(109, 10);
+            this.txtctid.Name = "txtctid";
+            this.txtctid.Size = new System.Drawing.Size(105, 20);
+            this.txtctid.TabIndex = 43;
+            // 
+            // btnXoaCT
+            // 
+            this.btnXoaCT.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnXoaCT.Location = new System.Drawing.Point(253, 75);
+            this.btnXoaCT.Name = "btnXoaCT";
+            this.btnXoaCT.Size = new System.Drawing.Size(83, 23);
+            this.btnXoaCT.TabIndex = 45;
+            this.btnXoaCT.Text = "Xóa";
+            this.btnXoaCT.UseVisualStyleBackColor = false;
+            this.btnXoaCT.Click += new System.EventHandler(this.btnXoaCT_Click_1);
+            // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Lime;
@@ -519,41 +556,16 @@
             this.label7.TabIndex = 48;
             this.label7.Text = "Xuất Hàng";
             // 
-            // panel1
+            // button8
             // 
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.txtctid);
-            this.panel1.Location = new System.Drawing.Point(6, 14);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(235, 35);
-            this.panel1.TabIndex = 46;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 13);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 13);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "Mã Hóa Đơn";
-            // 
-            // txtctid
-            // 
-            this.txtctid.Location = new System.Drawing.Point(109, 10);
-            this.txtctid.Name = "txtctid";
-            this.txtctid.Size = new System.Drawing.Size(105, 20);
-            this.txtctid.TabIndex = 43;
-            // 
-            // btnXoaCT
-            // 
-            this.btnXoaCT.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnXoaCT.Location = new System.Drawing.Point(253, 75);
-            this.btnXoaCT.Name = "btnXoaCT";
-            this.btnXoaCT.Size = new System.Drawing.Size(83, 23);
-            this.btnXoaCT.TabIndex = 45;
-            this.btnXoaCT.Text = "Xóa";
-            this.btnXoaCT.UseVisualStyleBackColor = false;
-            this.btnXoaCT.Click += new System.EventHandler(this.btnXoaCT_Click_1);
+            this.button8.BackColor = System.Drawing.Color.Purple;
+            this.button8.Location = new System.Drawing.Point(217, -1);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 34);
+            this.button8.TabIndex = 49;
+            this.button8.Text = "In Report";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // XuatHang
             // 
@@ -561,6 +573,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(791, 514);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox4);
@@ -582,6 +595,8 @@
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -594,8 +609,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.LoadHD)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LoadCT)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -650,5 +663,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtctid;
         private System.Windows.Forms.Button btnXoaCT;
+        private System.Windows.Forms.Button button8;
     }
 }

@@ -52,13 +52,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel1.BackgroundImage = global::LoginForm_DeMo.Properties.Resources._0d85028c_61dd_4fdb_b7ec_c6e02cf305121;
+            this.panel1.BackgroundImage = global::LoginForm_DeMo.Properties.Resources.Tổng_hợp_những_hình_ảnh_Icon_đáng_yêu_cute_nhất_48;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(46, 12);
+            this.panel1.Location = new System.Drawing.Point(137, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(565, 136);
+            this.panel1.Size = new System.Drawing.Size(390, 136);
             this.panel1.TabIndex = 0;
             // 
             // label4
@@ -66,7 +66,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label4.Location = new System.Drawing.Point(31, 72);
+            this.label4.Location = new System.Drawing.Point(52, 37);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 33);
             this.label4.TabIndex = 1;
@@ -78,7 +78,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Mistral", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label3.Location = new System.Drawing.Point(5, 15);
+            this.label3.Location = new System.Drawing.Point(280, 32);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 38);
             this.label3.TabIndex = 0;
@@ -87,6 +87,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel2.Controls.Add(this.textacc);
             this.panel2.Controls.Add(this.label1);
             this.panel2.ForeColor = System.Drawing.SystemColors.Highlight;
@@ -116,6 +117,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel3.Controls.Add(this.linkLabel1);
             this.panel3.Controls.Add(this.check_Show);
             this.panel3.Controls.Add(this.checkBox1);

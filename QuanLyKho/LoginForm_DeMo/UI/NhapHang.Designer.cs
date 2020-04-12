@@ -78,6 +78,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.buttonhdxoa = new System.Windows.Forms.Button();
             this.buttonhdsua = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoadCT)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -574,12 +575,24 @@
             this.buttonhdsua.UseVisualStyleBackColor = false;
             this.buttonhdsua.Click += new System.EventHandler(this.buttonhdsua_Click);
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Purple;
+            this.button8.Location = new System.Drawing.Point(241, 1);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 34);
+            this.button8.TabIndex = 54;
+            this.button8.Text = "In Report";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // NhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(791, 514);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox4);
@@ -673,5 +686,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button buttonhdxoa;
         private System.Windows.Forms.Button buttonhdsua;
+        private System.Windows.Forms.Button button8;
     }
 }
