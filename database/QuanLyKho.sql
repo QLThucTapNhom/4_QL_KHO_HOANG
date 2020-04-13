@@ -23,12 +23,20 @@ create table NhaCungCap
 	SoDienThoai nvarchar(15)null,
 	Email nvarchar(50)null,
 	MoreInfo nvarchar(max),
-	TGHopDong Date,
+	TGHopDong nvarchar(50),
 
 )
 go
-
+create table KhachHang
+(
+	KhachHangID nvarchar(50) primary key,
+	TenKhachHang nvarchar(50)null,
+	DiaChi nvarchar(100)null,
+	SoDienThoai varchar(15)null,
+	GhiChu nvarchar(max)null,
+)
 go
+
 create table SanPham
 (
     SanPhamID nvarchar(128) primary key,
@@ -72,6 +80,7 @@ create table HoaDonXuat
 (
    IdXuat nvarchar(128) primary key,
    NhanVienID nvarchar(50) foreign key references NhanVien(NhanVienID),
+   KhachHangID nvarchar(50) foreign key references KhachHang(KhachHangID),
    NgayHD Date,
    Tong int ,
 )
@@ -93,7 +102,12 @@ CREATE TABLE TaiKhoan(
 
 )
 go
-alter table NhaCungCap alter column TGHopDong nvarchar(50)
+insert into KhachHang values(N'KH01',N'mobiphone 1',N'Ninh Bình','0988032021','Null')
+insert into KhachHang values(N'KH02',N'mobiphone 3',N'Quảng Ninhh','0988032021','Null')
+insert into KhachHang values(N'KH03',N'mobiphone 3',N'Hà Nội','0988032022','Null')
+insert into KhachHang values(N'KH04',N'mobiphone 4',N'Ninh Bình','0988032023','Null')
+insert into KhachHang values(N'KH05',N'mobiphone 5',N'Quảng Bình','0988032024','Null')
+
 
 insert into NhanVien values(N'NV01',N'Đàm Viết Tùng','1999-08-07',1,N'Tiếp Thị',N'Hà Nội','NhanVien1@gmail.com','012345679',3000000)
 insert into NhanVien values(N'NV02',N'Đàm Viết Độ','1999-09-07',1,N'Nhân Viên Kĩ Thuật',N'Hà Nội','NhanVien2@gmail.com','012345679',3000000)
@@ -132,11 +146,11 @@ INSERT [dbo].[NhapChiTiet]  VALUES (N'004', N'004',1, 5000000)
 INSERT [dbo].[NhapChiTiet]  VALUES (N'005', N'005', 1, 7500000)
 
 
-INSERT [dbo].[HoaDonXuat]  VALUES (N'001',N'NV05', N'2020-01-01',11000000 )
-INSERT [dbo].[HoaDonXuat]  VALUES (N'002',N'NV04', N'2016-02-02', 90000000)
-INSERT [dbo].[HoaDonXuat]  VALUES (N'003',N'NV03', N'2016-01-02', 60000000)
-INSERT [dbo].[HoaDonXuat]  VALUES (N'004',N'NV02', N'2015-04-04',5000000)
-INSERT [dbo].[HoaDonXuat]  VALUES (N'005',N'NV01', N'2010-04-04', 7500000)
+INSERT [dbo].[HoaDonXuat]  VALUES (N'001',N'NV05',N'KH01', N'2020-01-01',11000000 )
+INSERT [dbo].[HoaDonXuat]  VALUES (N'002',N'NV04',N'KH02', N'2016-02-02', 90000000)
+INSERT [dbo].[HoaDonXuat]  VALUES (N'003',N'NV03',N'KH03', N'2016-01-02', 60000000)
+INSERT [dbo].[HoaDonXuat]  VALUES (N'004',N'NV02',N'KH04', N'2015-04-04',5000000)
+INSERT [dbo].[HoaDonXuat]  VALUES (N'005',N'NV01',N'KH05', N'2010-04-04', 7500000)
 
 INSERT [dbo].[XuatChiTiet]  VALUES (N'001', N'001', 1,  11000000)
 INSERT [dbo].[XuatChiTiet]  VALUES (N'002', N'002', 10, 9000000)
