@@ -143,5 +143,3 @@ INSERT [dbo].[XuatChiTiet]  VALUES (N'002', N'002', 10, 9000000)
 INSERT [dbo].[XuatChiTiet]  VALUES (N'003', N'003', 10, 6000000)
 INSERT [dbo].[XuatChiTiet]  VALUES (N'004', N'004',1, 5000000)
 INSERT [dbo].[XuatChiTiet]  VALUES (N'005', N'005', 1, 7500000)
-
-

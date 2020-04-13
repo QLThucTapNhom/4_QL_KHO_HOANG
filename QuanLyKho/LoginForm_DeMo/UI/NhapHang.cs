@@ -13,56 +13,62 @@ namespace LoginForm_DeMo.UI
 {
     public partial class NhapHang : Form
     {
-        SqlConnection connection;
-        SqlCommand command;
-        string str = @"Data Source = WIN10PRO\SQLEXPRESS; Initial Catalog = QLKho; Integrated Security = True";
-        SqlDataAdapter adapter = new SqlDataAdapter();
+        //SqlConnection connection;
+        //SqlCommand command;
+        //string str = @"Data Source = WIN10PRO\SQLEXPRESS; Initial Catalog = QLKho; Integrated Security = True";
+        //SqlDataAdapter adapter = new SqlDataAdapter();
 
-        public void LoadHoaDon()
-        {
-            DataTable table = new DataTable();
-            command = connection.CreateCommand();
-            command.CommandText = "select * from HoaDonNhap  ";
-            adapter.SelectCommand = command;
-            table.Clear();
-            adapter.Fill(table);
 
-            //conn.Close();
-            LoadHD.DataSource = table;
-        }
-        public void LoadTimHD()
-        {
-            DataTable table = new DataTable();
-            command = connection.CreateCommand();
-            command.CommandText = "select * from HoaDonNhap  where IdNhap   = N'" + txthdtim.Text + "' ";
-            adapter.SelectCommand = command;
-            table.Clear();
-            adapter.Fill(table);
-            LoadHD.DataSource = table;
-            //conn.Close();
-        }
-        public void LoadChiTietHD()
-        {
-            DataTable table = new DataTable();
-            command = connection.CreateCommand();
-            command.CommandText = "select * from NhapChiTiet ";
-            adapter.SelectCommand = command;
-            table.Clear();
-            adapter.Fill(table);
+        ConnectDatabase database = new ConnectDatabase();
 
-            //conn.Close();
-            LoadCT.DataSource = table;
-        }
-        public void LoadTimCTHD()
-        {
-            DataTable table = new DataTable();
-            command = connection.CreateCommand();
-            command.CommandText = "select * from NhapChiTiet where IdNhap = N'" + txtcttim.Text + "' OR IdNhap = N'" + txthdid.Text + "' ";
-            adapter.SelectCommand = command;
-            table.Clear();
-            adapter.Fill(table);
-            LoadCT.DataSource = table;
-        }
+        //public void LoadHoaDon()
+        //{
+        //    DataTable table = new DataTable();
+        //    command = connection.CreateCommand();
+        //    command.CommandText = "select * from HoaDonNhap  ";
+        //    adapter.SelectCommand = command;
+        //    table.Clear();
+        //    adapter.Fill(table);
+
+        //    //conn.Close();
+        //    LoadHD.DataSource = table;
+        //}
+        //public void LoadTimHD()
+        //{
+        //    DataTable table = new DataTable();
+        //    command = connection.CreateCommand();
+        //    command.CommandText = "select * from HoaDonNhap  where IdNhap   = N'" + txthdtim.Text + "' ";
+        //    adapter.SelectCommand = command;
+        //    table.Clear();
+        //    adapter.Fill(table);
+        //    LoadHD.DataSource = table;
+        //    //conn.Close();
+        //}
+        //public void LoadChiTietHD()
+        //{
+        //    DataTable table = new DataTable();
+        //    command = connection.CreateCommand();
+        //    command.CommandText = "select * from NhapChiTiet ";
+        //    adapter.SelectCommand = command;
+        //    table.Clear();
+        //    adapter.Fill(table);
+
+        //    //conn.Close();
+        //    LoadCT.DataSource = table;
+            
+        //}
+        //public void LoadTimCTHD()
+        //{
+        //    DataTable table = new DataTable();
+        //    command = connection.CreateCommand();
+        //    command.CommandText = "select * from NhapChiTiet where IdNhap = N'" + txtcttim.Text + "' OR IdNhap = N'" + txthdid.Text + "' ";
+        //    adapter.SelectCommand = command;
+        //    table.Clear();
+        //    adapter.Fill(table);
+        //    LoadCT.DataSource = table;
+            
+            
+        //}
         public NhapHang()
         {
             InitializeComponent();
@@ -70,20 +76,23 @@ namespace LoginForm_DeMo.UI
 
         private void NhapHang_Load(object sender, EventArgs e)
         {
-            connection = new SqlConnection(str);
-            connection.Open();
-            LoadChiTietHD();
-            LoadHoaDon();
+            //connection = new SqlConnection(str);
+            //connection.Open();
+            //LoadChiTietHD();
+            database.LoadDataGridView(LoadCT, "select * from NhapChiTiet ");
+            //LoadHoaDon();
+            database.LoadDataGridView(LoadHD, "select * from HoaDonNhap");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            LoadHoaDon();
+            database.LoadDataGridView(LoadHD, "select * from HoaDonNhap ");
+            //LoadHoaDon();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            LoadChiTietHD();
+            database.LoadDataGridView(LoadCT, "select * from NhapChiTiet ");
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -94,7 +103,8 @@ namespace LoginForm_DeMo.UI
             }
             else
             {
-                LoadTimHD();
+                database.LoadDataGridView(LoadHD, "select * from HoaDonNhap  where IdNhap   = N'" + txthdtim.Text + "' ");
+                //LoadTimHD();
             }
         }
 
@@ -102,11 +112,11 @@ namespace LoginForm_DeMo.UI
         {
             if (txtcttim.Text == "")
             {
-                MessageBox.Show("Bạn chủa điền thông tin cần tìm");
+                MessageBox.Show("Bạn chưa điền thông tin cần tìm!");
             }
             else
             {
-                LoadTimCTHD();
+                database.LoadDataGridView(LoadCT, "select * from NhapChiTiet where IdNhap = N'" + txtcttim.Text + "' OR IdNhap = N'" + txthdid.Text + "' ");
             }
         }
 
@@ -118,7 +128,7 @@ namespace LoginForm_DeMo.UI
             }
             else
             {
-                LoadTimCTHD();
+                database.LoadDataGridView(LoadCT, "select * from NhapChiTiet where IdNhap = N'" + txtcttim.Text + "' OR IdNhap = N'" + txthdid.Text + "' ");
             }
         }
 
@@ -133,10 +143,13 @@ namespace LoginForm_DeMo.UI
             {
                 string ngay = txthddate.Value.ToString("MM-dd-yyy");
                 /*Vì tính ràng buộc nên chúng ta chỉ cho phép sửa IDNhanVien,IDKhachHang và ngày tạo hóa đơn .*/
-                command = connection.CreateCommand();
-                command.CommandText = " update HoaDonNhap set NhanVienID  = N'" + txthdnv.Text + "',NgayHD  = '" + ngay + "' where IdNhap  = N'" + txthdid.Text + "'";
-                command.ExecuteNonQuery();
-                LoadHoaDon();
+                //command = connection.CreateCommand();
+                string update = " update HoaDonNhap set NhanVienID  = N'" + txthdnv.Text + "',NgayHD  = '" + ngay + "' where IdNhap  = N'" + txthdid.Text + "'";
+                //command.ExecuteNonQuery();
+                //LoadHoaDon();
+                database.SQLConnection(update);
+
+                database.LoadDataGridView(LoadHD, "select * from HoaDonNhap");
                 MessageBox.Show(" Sửa Hóa đơn thành công !");
 
             }
@@ -152,11 +165,18 @@ namespace LoginForm_DeMo.UI
             {
                 //em đã tạo 1 trigger để xóa Hóa đơn trong modul3
                 /*Vì khi xóa 1 hóa đơn cần xóa các chi tiết và trả lại các giá trị cho Sản Phẩm như hàng tồn kho .*/
-                command = connection.CreateCommand();
-                command.CommandText = "delete HoaDonNhap where IdNhap = N'" + txthdid.Text + "'";
-                command.ExecuteNonQuery();
-                LoadHoaDon();
-                LoadChiTietHD();
+                //command = connection.CreateCommand();
+                string delete = "delete HoaDonNhap where IdNhap = N'" + txthdid.Text + "'";
+                //command.ExecuteNonQuery();
+
+                database.SQLConnection(delete);
+
+
+
+                //LoadHoaDon();
+                database.LoadDataGridView(LoadHD, "select * from HoaDonNhap");
+                //LoadChiTietHD();
+                database.LoadDataGridView(LoadCT, "select * from NhapChiTiet ");
                 MessageBox.Show("Xóa Hóa đơn thành công !");
 
             }
@@ -173,11 +193,17 @@ namespace LoginForm_DeMo.UI
             {
                 //em đã tạo 1 trigger để xóa Hóa đơn chi tiết trong modul 3 
                 /*khi xóa chi tiết ta cần trả lại hàng tồn kho cho sản phẩm và update lại giá tiền ở hóa đơn*/
-                command = connection.CreateCommand();
-                command.CommandText = "delete NhapChiTiet   where IdNhap = N'" + txtctid.Text + "' and SanPhamID = N'" + txtctsp.Text + "'";
-                command.ExecuteNonQuery();
-                LoadChiTietHD();
-                LoadHoaDon();
+                //command = connection.CreateCommand();
+                string delete = "delete NhapChiTiet   where IdNhap = N'" + txtctid.Text + "' and SanPhamID = N'" + txtctsp.Text + "'";
+                //command.ExecuteNonQuery();
+                //LoadChiTietHD();
+                database.LoadDataGridView(LoadCT, "select * from NhapChiTiet ");
+
+                database.SQLConnection(delete);
+
+
+                //LoadHoaDon();
+                database.LoadDataGridView(LoadHD, "select * from HoaDonNhap");
                 MessageBox.Show("Xóa Chi Tiết Hóa đơn thành công !");
 
             }
@@ -194,11 +220,16 @@ namespace LoginForm_DeMo.UI
 
                 /*Việc thêm chi tiết cũng khá quan trọng vì ta thêm chi tiết thì ta cần thêm giá tiền vào hóa đơn của nó  và update
                  lại giá trị của Hàng Tồn kho của Sản Phẩm . Vậy nên em đã tạo 1 trigger cho việc thêm chi tiết ở modul 3*/
-                command = connection.CreateCommand();
-                command.CommandText = "insert into NhapChiTiet(IdNhap,SanPhamID,SoLuong) values(N'" + txtctid.Text + "', N'" + txtctsp.Text + "', " + txtctsl.Text + ")";
-                command.ExecuteNonQuery();
-                LoadChiTietHD();
-                LoadHoaDon();
+                //command = connection.CreateCommand();
+                string insert = "insert into NhapChiTiet(IdNhap,SanPhamID,SoLuong) values(N'" + txtctid.Text + "', N'" + txtctsp.Text + "', " + txtctsl.Text + ")";
+                //command.ExecuteNonQuery();
+                database.SQLConnection(insert);
+                //LoadChiTietHD();
+                database.LoadDataGridView(LoadCT, "select * from NhapChiTiet ");
+
+
+                //LoadHoaDon();
+                database.LoadDataGridView(LoadHD, "select * from HoaDonNhap");
                 MessageBox.Show(" Thêm Chi Tiết HD thành công !");
 
             }
@@ -218,12 +249,15 @@ namespace LoginForm_DeMo.UI
                  có đủ không không đủ thì thông báo và đủ thì bán và giảm số lượng tồn đi sau đó update đơn giá
                  vào Chi Tiết HD từ đó tính tổng tiền vào HD cần bán . Nên em đã tạp 1 trigger cho quá trình thêm này 
                  vào datatable của bài cho tiện trong quá trình sử dụng ở modul 3. */
-                command = connection.CreateCommand();
-                command.CommandText = "insert into HoaDonNhap(IdNhap,NgayHD,NhanVienID) values(N'" + txthdid.Text + "','" + ngay + "', N'" + txthdnv.Text + "')" +
+                //command = connection.CreateCommand();
+                string insert = "insert into HoaDonNhap(IdNhap,NgayHD,NhanVienID) values(N'" + txthdid.Text + "','" + ngay + "', N'" + txthdnv.Text + "')" +
                     "insert into NhapChiTiet (IdNhap,SanPhamID,SoLuong) values(N'" + txtctid.Text + "', N'" + txtctsp.Text + "', " + txtctsl.Text + ")";
-                command.ExecuteNonQuery();
-                LoadChiTietHD();
-                LoadHoaDon();
+                //command.ExecuteNonQuery();
+                database.SQLConnection(insert);
+                //LoadChiTietHD();
+                database.LoadDataGridView(LoadCT, "select * from NhapChiTiet ");
+                //LoadHoaDon();
+                database.LoadDataGridView(LoadHD, "select * from HoaDonNhap");
                 MessageBox.Show(" Thêm Hóa đơn thành công !");
             }
         }

@@ -71,6 +71,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectDatabase.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +208,15 @@
     <None Include="Resources\Office-Customer-Male-Light-icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icons8-close-window-48.png" />
+    <None Include="Resources\Icon01191.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\133.png" />
+    <None Include="Resources\upload.png" />
+    <None Include="Resources\icons_list.png" />
+    <None Include="Resources\www.png" />
+    <None Include="Resources\ncc.png" />
+    <None Include="Resources\close1.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

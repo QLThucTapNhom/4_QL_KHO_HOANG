@@ -16,5 +16,16 @@ namespace LoginForm_DeMo
         {
             InitializeComponent();
         }
+        ConnectDatabase database = new ConnectDatabase();
+
+        private void NhaCC_Load(object sender, EventArgs e)
+        {
+            database.LoadDataGridView(dataGridViewNCC, "SELECT * FROM dbo.NhaCungCap");
+        }
+
+        private void btnthem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
