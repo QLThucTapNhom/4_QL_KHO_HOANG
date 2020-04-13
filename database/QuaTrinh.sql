@@ -231,3 +231,22 @@ create Trigger Delete_Nhap on HoaDonNhap instead of Delete
 	values (N'007',N'002',11)
 
 	drop trigger Insert_CTHoaDonNhap/*Xóa Trigger */
+
+
+	----------------------------------
+	/*Tạo Report Xuất Hóa Don*/
+
+	
+
+	create proc XuatHoadon (@MaHD nvarchar(128) )
+	as
+	begin
+	select KhachHang.TenKhachHang,KhachHang.DiaChi,KhachHang.SoDienThoai,SanPham.TenSanPham,SanPham.ThoiGianBaoHanh,HoaDonXuat.IdXuat,HoaDonXuat.NgayHD,HoaDonXuat.Tong,
+	XuatChiTiet.DonGia,XuatChiTiet.SoLuong
+	from HoaDonXuat,XuatChiTiet,SanPham,KhachHang
+	where HoaDonXuat.IdXuat=XuatChiTiet.IdXuat and SanPham.SanPhamID=XuatChiTiet.SanPhamID and KhachHang.KhachHangID= HoaDonXuat.KhachHangID and HoaDonXuat.IdXuat=@MaHD
+	
+	end
+
+	exec XuatHoadon N'001'
+	--drop procedure xuatHoadon
