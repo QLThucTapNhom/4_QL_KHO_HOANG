@@ -131,12 +131,12 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(387, 55);
+            this.linkLabel1.Location = new System.Drawing.Point(437, 55);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(82, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(100, 13);
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Quên Mật Khẩu";
+            this.linkLabel1.Text = "Đăng Ký Tài Khoản";
             // 
             // check_Show
             // 
@@ -144,7 +144,7 @@
             this.check_Show.Location = new System.Drawing.Point(195, 55);
             this.check_Show.Name = "check_Show";
             this.check_Show.Size = new System.Drawing.Size(48, 17);
-            this.check_Show.TabIndex = 3;
+            this.check_Show.TabIndex = 4;
             this.check_Show.Text = "Hiện";
             this.check_Show.UseVisualStyleBackColor = true;
             this.check_Show.CheckedChanged += new System.EventHandler(this.check_Show_CheckedChanged);
@@ -155,7 +155,7 @@
             this.checkBox1.Location = new System.Drawing.Point(124, 55);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(65, 17);
-            this.checkBox1.TabIndex = 2;
+            this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Ghi Nhớ";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
@@ -196,7 +196,7 @@
             this.button2.Location = new System.Drawing.Point(514, 318);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(58, 70);
-            this.button2.TabIndex = 4;
+            this.button2.TabIndex = 6;
             this.button2.Text = "Exit";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;

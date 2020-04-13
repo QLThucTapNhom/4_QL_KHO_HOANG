@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace LoginForm_DeMo.UI
 {
-    public partial class ReportNhap : Form
+    public partial class KhachHang : Form
     {
-        public ReportNhap()
+        ConnectDatabase data = new ConnectDatabase();
+        public KhachHang()
         {
             InitializeComponent();
         }
 
-        private void ReportNhap_Load(object sender, EventArgs e)
+        private void KhachHang_Load(object sender, EventArgs e)
         {
-
-            this.reportViewer1.RefreshReport();
+            data.LoadDataGridView(dataGridViewKhach, "select * from KhachHang");
         }
     }
 }

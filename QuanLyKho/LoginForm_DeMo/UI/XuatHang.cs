@@ -316,8 +316,7 @@ namespace LoginForm_DeMo.UI
 
         private void button8_Click(object sender, EventArgs e)
         {
-            ReportXuat xuat = new ReportXuat();
-            xuat.Show();
+         
         }
     }
 }
