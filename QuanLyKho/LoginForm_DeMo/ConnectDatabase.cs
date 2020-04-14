@@ -14,7 +14,7 @@ namespace LoginForm_DeMo
 
         SqlConnection connection;
         SqlCommand command;
-        string str = @"Data Source=; Initial Catalog = QLKho; Integrated Security = True";
+        string str = @"Data Source=WIN10PRO\SQLEXPRESS; Initial Catalog = QLKho; Integrated Security = True";
         SqlDataAdapter adapter = new SqlDataAdapter();
 
 

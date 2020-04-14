@@ -99,23 +99,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="UI\KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\NhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\NhapHang.Designer.cs">
       <DependentUpon>NhapHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\ReportNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\ReportNhap.Designer.cs">
-      <DependentUpon>ReportNhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\ReportXuat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\ReportXuat.Designer.cs">
-      <DependentUpon>ReportXuat.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\TaiKhoan.cs">
       <SubType>Form</SubType>
@@ -151,14 +145,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI\KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\NhapHang.resx">
       <DependentUpon>NhapHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\ReportNhap.resx">
-      <DependentUpon>ReportNhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\ReportXuat.resx">
-      <DependentUpon>ReportXuat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\TaiKhoan.resx">
       <DependentUpon>TaiKhoan.cs</DependentUpon>

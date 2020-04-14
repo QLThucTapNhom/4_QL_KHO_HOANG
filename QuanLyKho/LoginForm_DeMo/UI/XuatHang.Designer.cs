@@ -76,7 +76,6 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.LoadCT = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -556,24 +555,12 @@
             this.label7.TabIndex = 48;
             this.label7.Text = "Xuất Hàng";
             // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Purple;
-            this.button8.Location = new System.Drawing.Point(217, -1);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 34);
-            this.button8.TabIndex = 49;
-            this.button8.Text = "In Report";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // XuatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(791, 514);
-            this.Controls.Add(this.button8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox4);
@@ -663,6 +650,5 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtctid;
         private System.Windows.Forms.Button btnXoaCT;
-        private System.Windows.Forms.Button button8;
     }
 }

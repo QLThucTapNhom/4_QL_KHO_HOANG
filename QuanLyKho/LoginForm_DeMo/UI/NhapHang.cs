@@ -291,8 +291,7 @@ namespace LoginForm_DeMo.UI
 
         private void button8_Click(object sender, EventArgs e)
         {
-            ReportNhap nhap = new ReportNhap();
-            nhap.Show();
+           
         }
     }
 }
