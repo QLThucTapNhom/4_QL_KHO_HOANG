@@ -250,3 +250,12 @@ create Trigger Delete_Nhap on HoaDonNhap instead of Delete
 
 	exec XuatHoadon N'001'
 	--drop procedure xuatHoadon
+
+--proc xoa NCC
+CREATE PROC DEL_NCC @MaNCC NCHAR(20) AS
+BEGIN
+  
+ UPDATE dbo.SanPham SET NhaCungCapID=NULL WHERE NhaCungCapID=@MaNCC
+  DELETE FROM dbo.NhaCungCap WHERE NhaCungCapID=@MaNCC
+   
+END
