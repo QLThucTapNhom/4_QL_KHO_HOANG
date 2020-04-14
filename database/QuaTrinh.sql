@@ -68,7 +68,7 @@ create Trigger Delete_Xuat on HoaDonXuat instead of Delete
 
 
 	
-		create trigger Insert_CTHoaDon on XuatChiTiet instead of Insert
+		alter trigger Insert_CTHoaDon on XuatChiTiet instead of Insert
 	as
 	declare @soluong int,@masp char(10),@soluongton int,@mahd char(10),@Tongtien float
 	begin
@@ -99,7 +99,7 @@ create Trigger Delete_Xuat on HoaDonXuat instead of Delete
 			update XuatChiTiet
 			set DonGia=(select DonGiaSanPham from SanPham where SanPhamID=@masp)
 			where SanPhamID=@masp and @mahd=IdXuat
-			if(@Tongtien = null)
+			if(@Tongtien is null)
 			begin
 				update HoaDonXuat
 				set Tong=(select DonGia*SoLuong from XuatChiTiet where SanPhamID=@masp and IdXuat=@mahd)
@@ -108,7 +108,7 @@ create Trigger Delete_Xuat on HoaDonXuat instead of Delete
 			else
 			begin
 				update HoaDonXuat
-				set Tong=Tong + (select DonGia*SoLuong from XuatChiTiet where SanPhamID=@masp and IdXuat=@mahd)
+				set Tong=Tong + (select DonGia*SoLuong from XuatChiTiet where SanPhamID=@masp and IdXuat=@mahd) 
 				where IdXuat=@mahd
 			end
 		end
@@ -208,7 +208,7 @@ create Trigger Delete_Nhap on HoaDonNhap instead of Delete
 			update NhapChiTiet
 			set DonGia=(select DonGiaSanPham from SanPham where SanPhamID=@masp)
 			where SanPhamID=@masp and @mahd=IdNhap
-			if(@Tongtien = null)
+			if(@Tongtien is null)
 			begin
 				update HoaDonNhap
 				set Tong=(select DonGia*SoLuong from NhapChiTiet where SanPhamID=@masp and IdNhap=@mahd)

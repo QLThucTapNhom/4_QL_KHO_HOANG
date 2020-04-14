@@ -76,7 +76,7 @@ namespace LoginForm_DeMo
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             DangKy dk = new DangKy();
-            dk.Show();
+            dk.ShowDialog();
             this.Hide();
         }
 
