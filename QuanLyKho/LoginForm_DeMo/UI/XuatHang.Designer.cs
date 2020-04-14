@@ -76,6 +76,9 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.LoadCT = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txthdkhach = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -92,6 +95,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.LoadHD)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoadCT)).BeginInit();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -106,6 +110,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.panel5);
             this.groupBox2.Controls.Add(this.button7);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.panel13);
@@ -177,7 +182,7 @@
             // 
             this.panel8.Controls.Add(this.label1);
             this.panel8.Controls.Add(this.txthdtien);
-            this.panel8.Location = new System.Drawing.Point(6, 174);
+            this.panel8.Location = new System.Drawing.Point(6, 184);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(256, 35);
             this.panel8.TabIndex = 48;
@@ -202,7 +207,7 @@
             // 
             this.panel9.Controls.Add(this.label2);
             this.panel9.Controls.Add(this.txthdnv);
-            this.panel9.Location = new System.Drawing.Point(6, 74);
+            this.panel9.Location = new System.Drawing.Point(6, 60);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(256, 35);
             this.panel9.TabIndex = 49;
@@ -227,7 +232,7 @@
             // 
             this.panel11.Controls.Add(this.txthddate);
             this.panel11.Controls.Add(this.label4);
-            this.panel11.Location = new System.Drawing.Point(6, 119);
+            this.panel11.Location = new System.Drawing.Point(6, 143);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(256, 35);
             this.panel11.TabIndex = 51;
@@ -555,6 +560,31 @@
             this.label7.TabIndex = 48;
             this.label7.Text = "Xuất Hàng";
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.txthdkhach);
+            this.panel5.Location = new System.Drawing.Point(6, 101);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(256, 35);
+            this.panel5.TabIndex = 50;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 13);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Mã Khách Hàng";
+            // 
+            // txthdkhach
+            // 
+            this.txthdkhach.Location = new System.Drawing.Point(109, 10);
+            this.txthdkhach.Name = "txthdkhach";
+            this.txthdkhach.Size = new System.Drawing.Size(124, 20);
+            this.txthdkhach.TabIndex = 43;
+            // 
             // XuatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -596,6 +626,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.LoadHD)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LoadCT)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -650,5 +682,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtctid;
         private System.Windows.Forms.Button btnXoaCT;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txthdkhach;
     }
 }

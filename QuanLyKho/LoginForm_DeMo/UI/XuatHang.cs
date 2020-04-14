@@ -133,8 +133,9 @@ namespace LoginForm_DeMo.UI
             i = LoadHD.CurrentRow.Index;
             txthdid.Text = LoadHD.Rows[i].Cells[0].Value.ToString();
             txthdnv.Text = LoadHD.Rows[i].Cells[1].Value.ToString();
-            txthddate.Text = LoadHD.Rows[i].Cells[2].Value.ToString();
-            txthdtien.Text = LoadHD.Rows[i].Cells[3].Value.ToString();
+            txthdkhach.Text = LoadHD.Rows[i].Cells[2].Value.ToString();
+            txthddate.Text = LoadHD.Rows[i].Cells[3].Value.ToString();
+            txthdtien.Text = LoadHD.Rows[i].Cells[4].Value.ToString();
         }
 
         private void LoadCT_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -173,7 +174,7 @@ namespace LoginForm_DeMo.UI
                 string ngay = txthddate.Value.ToString("MM-dd-yyy");
                 /*Vì tính ràng buộc nên chúng ta chỉ cho phép sửa IDNhanVien,IDKhachHang và ngày tạo hóa đơn .*/
                 //command = connection.CreateCommand();
-                string update = " update HoaDonXuat set NhanVienID  = N'" + txthdnv.Text + "',NgayHD  = '" + ngay + "' where IdXuat  = N'" + txthdid.Text + "'";
+                string update = " update HoaDonXuat set NhanVienID  = N'" + txthdnv.Text + "',N'"+txthdkhach.Text+"',NgayHD  = '" + ngay + "' where IdXuat  = N'" + txthdid.Text + "'";
                 //command.ExecuteNonQuery();
 
                 db.SQLConnection(update);
@@ -279,7 +280,7 @@ namespace LoginForm_DeMo.UI
                  vào Chi Tiết HD từ đó tính tổng tiền vào HD cần bán . Nên em đã tạp 1 trigger cho quá trình thêm này 
                  vào datatable của bài cho tiện trong quá trình sử dụng ở modul 3. */
                 //command = connection.CreateCommand();
-                string insert = "insert into HoaDonXuat(IdXuat,NgayHD,NhanVienID) values(N'"+txthdid.Text+"','" + ngay + "', N'" + txthdnv.Text + "')" +
+                string insert = "insert into HoaDonXuat(IdXuat,KhachHangID,NgayHD,NhanVienID) values(N'"+txthdid.Text+ "',N'" + txthdkhach.Text + "','" + ngay + "', N'" + txthdnv.Text + "')" +
                     "insert into XuatChiTiet(IdXuat,SanPhamID,SoLuong) values(N'" + txtctid.Text + "', N'" + txtctsp.Text + "', " + txtctsl.Text + ")";
                 //command.ExecuteNonQuery();
                 db.SQLConnection(insert);
