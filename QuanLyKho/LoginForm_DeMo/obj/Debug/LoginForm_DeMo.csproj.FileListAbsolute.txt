@@ -258,3 +258,5 @@ D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.DangK
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.KhachHang.resources
 D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.DangKy.resources
 >>>>>>> 1b0a32c9fc662ed765a5b6c57b256cb5e4f5e5a3
+C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.DangKy.resources
+C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.KhachHang.resources

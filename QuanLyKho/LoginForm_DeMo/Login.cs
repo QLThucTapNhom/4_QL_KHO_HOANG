@@ -51,13 +51,12 @@ namespace LoginForm_DeMo
             }
             else
             {
-<<<<<<< HEAD
+
            
                 SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-0FP3KIB\MSSQLSERVEROK;Initial Catalog=QLKho;Integrated Security=True");
                 con.Open();
                 string s = "select count(*) from TaiKhoan where acc='" + textacc.Text + "'and pass='" + textpass.Text + "'";
-=======
->>>>>>> 1b0a32c9fc662ed765a5b6c57b256cb5e4f5e5a3
+
 
                 
                 bool check = db.Check(textpass.Text.Trim(), "SELECT pass FROM dbo.TaiKhoan WHERE acc=N'"+ textacc.Text.Trim()+"'");
