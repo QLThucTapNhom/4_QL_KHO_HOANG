@@ -28,18 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panelControl = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.panelControl = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -59,6 +61,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.button8);
             this.panel4.Controls.Add(this.button6);
             this.panel4.Controls.Add(this.button4);
             this.panel4.Controls.Add(this.button3);
@@ -70,40 +73,20 @@
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // panelControl
+            // button8
             // 
-            this.panelControl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelControl.Location = new System.Drawing.Point(142, 96);
-            this.panelControl.Name = "panelControl";
-            this.panelControl.Size = new System.Drawing.Size(787, 516);
-            this.panelControl.TabIndex = 4;
-            this.panelControl.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl_Paint);
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel3.Controls.Add(this.button7);
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(926, 87);
-            this.panel3.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(276, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(432, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = " HỆ THỐNG QUẢN LÝ KHO";
+            this.button8.BackgroundImage = global::LoginForm_DeMo.Properties.Resources._133;
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button8.Image = global::LoginForm_DeMo.Properties.Resources.ncc;
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.Location = new System.Drawing.Point(0, 382);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(133, 42);
+            this.button8.TabIndex = 6;
+            this.button8.Text = "Khách H";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button6
             // 
@@ -112,7 +95,7 @@
             this.button6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button6.Image = global::LoginForm_DeMo.Properties.Resources.close1;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 385);
+            this.button6.Location = new System.Drawing.Point(0, 464);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(133, 42);
             this.button6.TabIndex = 5;
@@ -131,7 +114,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(133, 42);
             this.button4.TabIndex = 3;
-            this.button4.Text = "NCC";
+            this.button4.Text = "Nhà CC";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -180,6 +163,29 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // panelControl
+            // 
+            this.panelControl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelControl.Location = new System.Drawing.Point(142, 96);
+            this.panelControl.Name = "panelControl";
+            this.panelControl.Size = new System.Drawing.Size(787, 516);
+            this.panelControl.TabIndex = 4;
+            this.panelControl.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl_Paint);
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel3.Controls.Add(this.button7);
+            this.panel3.Controls.Add(this.button5);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(926, 87);
+            this.panel3.TabIndex = 3;
+            // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.SystemColors.Highlight;
@@ -202,6 +208,18 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(276, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(432, 36);
+            this.label1.TabIndex = 0;
+            this.label1.Text = " HỆ THỐNG QUẢN LÝ KHO";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -209,6 +227,7 @@
             this.ClientSize = new System.Drawing.Size(936, 618);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
@@ -234,5 +253,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }

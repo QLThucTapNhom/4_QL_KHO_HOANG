@@ -117,5 +117,18 @@ namespace LoginForm_DeMo
         {
 
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            KhachHang hh = new KhachHang() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            hh.FormBorderStyle = FormBorderStyle.None;
+            this.panelControl.Controls.Add(hh);
+            foreach (Control ctrl in panelControl.Controls)
+            {
+                if (ctrl != hh)
+                    ctrl.Dispose();
+            }
+            hh.Show();
+        }
     }
 }

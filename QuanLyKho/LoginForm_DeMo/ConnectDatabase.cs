@@ -14,8 +14,13 @@ namespace LoginForm_DeMo
         SqlDataReader sqldatareader;
         SqlConnection connection;
         SqlCommand command;
+<<<<<<< HEAD
         string str = @"Data Source=DESKTOP-0FP3KIB\MSSQLSERVEROK;Initial Catalog=QLKho;Integrated Security=True";
+=======
+        string str = @"Data Source=WIN10PRO\SQLEXPRESS; Initial Catalog = QLKho; Integrated Security = True";
+>>>>>>> 1b0a32c9fc662ed765a5b6c57b256cb5e4f5e5a3
         SqlDataAdapter adapter = new SqlDataAdapter();
+        SqlDataReader reader;
 
 
         //Mở kết nối
@@ -53,6 +58,22 @@ namespace LoginForm_DeMo
             command = new SqlCommand(query, connection);
             command.ExecuteNonQuery();
             Disconnect();
+        }
+        //Kiểm tra dữ liệu đã tồn tại trong database hay chưa
+        public bool Check(string temp, string strsql)
+        {
+
+            Connect();
+            bool check = false;
+            command = new SqlCommand(strsql, connection);
+            reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader[0].ToString().Trim().ToLower() == temp.ToLower())
+                    check = true;
+            }
+            Disconnect();
+            return check;
         }
 
         public bool Check(string temp, string strsql)

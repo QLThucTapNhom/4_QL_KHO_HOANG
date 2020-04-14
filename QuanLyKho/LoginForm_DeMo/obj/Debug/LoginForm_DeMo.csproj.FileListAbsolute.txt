@@ -132,8 +132,6 @@ D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm
 D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.WebDesign.DLL
 D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
 D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\EnvDTE80.dll
-D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.ReportNhap.resources
-D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.ReportXuat.resources
 D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.CoreCompileInputs.cache
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
@@ -186,8 +184,6 @@ D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Menu.
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.NhaCC.resources
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Properties.Resources.resources
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.NhapHang.resources
-D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.ReportNhap.resources
-D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.ReportXuat.resources
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.TaiKhoan.resources
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.XuatHang.resources
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.GenerateResource.cache
@@ -195,6 +191,7 @@ D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.cspro
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.CopyComplete
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.exe
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.pdb
+<<<<<<< HEAD
 C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -255,3 +252,9 @@ C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeM
 C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.CopyComplete
 C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.exe
 C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.pdb
+=======
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.KhachHang.resources
+D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.DangKy.resources
+D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.KhachHang.resources
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.DangKy.resources
+>>>>>>> 1b0a32c9fc662ed765a5b6c57b256cb5e4f5e5a3

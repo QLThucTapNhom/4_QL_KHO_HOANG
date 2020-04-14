@@ -56,19 +56,19 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(137, 12);
+            this.panel1.Location = new System.Drawing.Point(46, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(390, 136);
+            this.panel1.Size = new System.Drawing.Size(565, 136);
             this.panel1.TabIndex = 0;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label4.Location = new System.Drawing.Point(52, 37);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 33);
+            this.label4.Size = new System.Drawing.Size(49, 31);
             this.label4.TabIndex = 1;
             this.label4.Text = "^-^";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -76,11 +76,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Mistral", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label3.Location = new System.Drawing.Point(280, 32);
+            this.label3.Location = new System.Drawing.Point(367, 67);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 38);
+            this.label3.Size = new System.Drawing.Size(170, 37);
             this.label3.TabIndex = 0;
             this.label3.Text = "Login Now";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -127,16 +127,18 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(565, 76);
             this.panel3.TabIndex = 2;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(387, 55);
+            this.linkLabel1.Location = new System.Drawing.Point(437, 55);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(82, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(100, 13);
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Quên Mật Khẩu";
+            this.linkLabel1.Text = "Đăng Ký Tài Khoản";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // check_Show
             // 
@@ -144,7 +146,7 @@
             this.check_Show.Location = new System.Drawing.Point(195, 55);
             this.check_Show.Name = "check_Show";
             this.check_Show.Size = new System.Drawing.Size(48, 17);
-            this.check_Show.TabIndex = 3;
+            this.check_Show.TabIndex = 4;
             this.check_Show.Text = "Hiện";
             this.check_Show.UseVisualStyleBackColor = true;
             this.check_Show.CheckedChanged += new System.EventHandler(this.check_Show_CheckedChanged);
@@ -155,9 +157,10 @@
             this.checkBox1.Location = new System.Drawing.Point(124, 55);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(65, 17);
-            this.checkBox1.TabIndex = 2;
+            this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Ghi Nhớ";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // textpass
             // 
@@ -196,7 +199,7 @@
             this.button2.Location = new System.Drawing.Point(514, 318);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(58, 70);
-            this.button2.TabIndex = 4;
+            this.button2.TabIndex = 6;
             this.button2.Text = "Exit";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;
@@ -228,6 +231,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
