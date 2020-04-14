@@ -11,10 +11,10 @@ namespace LoginForm_DeMo
 {
     class ConnectDatabase
     {
-
+        SqlDataReader sqldatareader;
         SqlConnection connection;
         SqlCommand command;
-        string str = @"Data Source=; Initial Catalog = QLKho; Integrated Security = True";
+        string str = @"Data Source=DESKTOP-0FP3KIB\MSSQLSERVEROK;Initial Catalog=QLKho;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
 
 
@@ -55,7 +55,21 @@ namespace LoginForm_DeMo
             Disconnect();
         }
 
+        public bool Check(string temp, string strsql)
+        {
 
+            Connect();
+            bool check = false;
+            command = new SqlCommand(strsql, connection);
+            sqldatareader = command.ExecuteReader();
+            while (sqldatareader.Read())
+            {
+                if (sqldatareader[0].ToString().Trim() == temp)
+                    check = true;
+            }
+            Disconnect();
+            return check;
+        }
 
 
     }

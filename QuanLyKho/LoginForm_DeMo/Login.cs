@@ -52,7 +52,7 @@ namespace LoginForm_DeMo
             else
             {
            
-                SqlConnection con = new SqlConnection(@"Data Source=WIN10PRO\SQLEXPRESS;Initial Catalog=QLkho;Integrated Security=True");
+                SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-0FP3KIB\MSSQLSERVEROK;Initial Catalog=QLKho;Integrated Security=True");
                 con.Open();
                 string s = "select count(*) from TaiKhoan where acc='" + textacc.Text + "'and pass='" + textpass.Text + "'";
 
