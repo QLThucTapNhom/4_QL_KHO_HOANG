@@ -13,7 +13,7 @@ namespace LoginForm_DeMo
 {
     public partial class Login : Form
     {
-
+        ConnectDatabase db = new ConnectDatabase();
         public Login()
         {
             InitializeComponent();
@@ -21,7 +21,7 @@ namespace LoginForm_DeMo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DialogResult h = MessageBox.Show("Do you wat exit program ?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+            DialogResult h = MessageBox.Show("Do you want exit program ?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
             if (h == DialogResult.Yes)
             {
                 Application.Exit();
@@ -51,36 +51,41 @@ namespace LoginForm_DeMo
             }
             else
             {
-           
-                SqlConnection con = new SqlConnection(@"Data Source=WIN10PRO\SQLEXPRESS;Initial Catalog=QLkho;Integrated Security=True");
-                con.Open();
-                string s = "select count(*) from TaiKhoan where acc='" + textacc.Text + "'and pass='" + textpass.Text + "'";
 
-                SqlDataAdapter da = new SqlDataAdapter(s, con);
-                DataTable dt = new DataTable();
-                try
+                
+                bool check = db.Check(textpass.Text.Trim(), "SELECT pass FROM dbo.TaiKhoan WHERE acc=N'"+ textacc.Text.Trim()+"'");
+                if (check==true)
                 {
-                    da.Fill(dt);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
-                if (dt.Rows[0][0].ToString() == "1")
-                {
-                    this.Hide();
+                    
                     Menu sp = new Menu();
                     sp.Show();
-                    con.Close();
+                    this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Kiểm Tra Lại Mật Khẩu Hoặc Tài Khoản");
+                    MessageBox.Show("Kiểm Tra Lại Mật Khẩu Hoặc Tài Khoản!");
                 }
             }
         }
 
         private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            DangKy dk = new DangKy();
+            dk.Show();
+            this.Hide();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
