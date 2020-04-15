@@ -218,25 +218,38 @@ namespace LoginForm_DeMo.UI
 
         private void btnThemCT_Click(object sender, EventArgs e)
         {
-            if (txtctid.Text == "")
+            string SpId = txtctsp.Text.Trim();
+            string HdId = txtctid.Text.Trim();
+            bool checksp = db.Check(SpId, "select SanPhamID from XuatChiTiet");
+            bool checkhd = db.Check(HdId, "select IdXuat from XuatChiTiet");
+            if (checkhd == false && checksp == false)
             {
-                MessageBox.Show(" Bạn Chưa Nhập ID Muốn Thêm chi tiết vào ");
+
+
+                if (txtctid.Text == "")
+                {
+                    MessageBox.Show(" Bạn Chưa Nhập ID Muốn Thêm chi tiết vào ");
+                }
+                else
+                {
+
+                    /*Việc thêm chi tiết cũng khá quan trọng vì ta thêm chi tiết thì ta cần thêm giá tiền vào hóa đơn của nó  và update
+                     lại giá trị của Hàng Tồn kho của Sản Phẩm . Vậy nên em đã tạo 1 trigger cho việc thêm chi tiết ở modul 3*/
+                    //command = connection.CreateCommand();
+                    string ins = "insert into XuatChiTiet(IdXuat,SanPhamID,SoLuong) values(N'" + txtctid.Text + "', N'" + txtctsp.Text + "', " + txtctsl.Text + ")";
+                    //command.ExecuteNonQuery();
+                    db.SQLConnection(ins);
+                    //LoadChiTietHD();
+                    db.LoadDataGridView(LoadCT, "select * from XuatChiTiet ");
+                    //LoadHoaDon();
+                    db.LoadDataGridView(LoadHD, "select * from HoaDonXuat ");
+                    MessageBox.Show(" Thêm Chi Tiết HD thành công !");
+
+                }
             }
             else
             {
-
-                /*Việc thêm chi tiết cũng khá quan trọng vì ta thêm chi tiết thì ta cần thêm giá tiền vào hóa đơn của nó  và update
-                 lại giá trị của Hàng Tồn kho của Sản Phẩm . Vậy nên em đã tạo 1 trigger cho việc thêm chi tiết ở modul 3*/
-                //command = connection.CreateCommand();
-                string ins = "insert into XuatChiTiet(IdXuat,SanPhamID,SoLuong) values(N'" + txtctid.Text + "', N'" + txtctsp.Text + "', " + txtctsl.Text + ")";
-                //command.ExecuteNonQuery();
-                db.SQLConnection(ins);
-                //LoadChiTietHD();
-                db.LoadDataGridView(LoadCT, "select * from XuatChiTiet ");
-                //LoadHoaDon();
-                db.LoadDataGridView(LoadHD, "select * from HoaDonXuat ");
-                MessageBox.Show(" Thêm Chi Tiết HD thành công !");
-
+                MessageBox.Show("Chi Tiết này đã tồn tại ");
             }
         }
 
@@ -317,6 +330,25 @@ namespace LoginForm_DeMo.UI
         private void button8_Click(object sender, EventArgs e)
         {
          
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            txthdid.Text = "";
+            txthdnv.Text = "";
+            txthdtien.Text = "";
+            txthdtim.Text = "";
+            txthddate.Text = "12/04/2020";
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            txtctid.Text = "";
+            txtctsp.Text = "";
+            txtctsl.Text = "";
+            txtctgia.Text = "";
+            txtcttim.Text = "";
+           
         }
     }
 }

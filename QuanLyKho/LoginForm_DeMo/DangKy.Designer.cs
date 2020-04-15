@@ -34,12 +34,12 @@
             this.textBoxPass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBoxUsername = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBoxConfirm = new System.Windows.Forms.TextBox();
-            this.textBoxMaNV = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxMaNV = new System.Windows.Forms.TextBox();
+            this.textBoxConfirm = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.buttonDK = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -119,44 +119,16 @@
             this.panel2.Size = new System.Drawing.Size(565, 182);
             this.panel2.TabIndex = 3;
             // 
-            // textBoxUsername
+            // label5
             // 
-            this.textBoxUsername.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBoxUsername.Location = new System.Drawing.Point(190, 20);
-            this.textBoxUsername.Multiline = true;
-            this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(279, 29);
-            this.textBoxUsername.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(40, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 21);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Username";
-            // 
-            // textBoxConfirm
-            // 
-            this.textBoxConfirm.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBoxConfirm.Location = new System.Drawing.Point(190, 90);
-            this.textBoxConfirm.Multiline = true;
-            this.textBoxConfirm.Name = "textBoxConfirm";
-            this.textBoxConfirm.PasswordChar = '*';
-            this.textBoxConfirm.Size = new System.Drawing.Size(279, 29);
-            this.textBoxConfirm.TabIndex = 5;
-            // 
-            // textBoxMaNV
-            // 
-            this.textBoxMaNV.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBoxMaNV.Location = new System.Drawing.Point(190, 125);
-            this.textBoxMaNV.Multiline = true;
-            this.textBoxMaNV.Name = "textBoxMaNV";
-            this.textBoxMaNV.Size = new System.Drawing.Size(279, 29);
-            this.textBoxMaNV.TabIndex = 6;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label5.Location = new System.Drawing.Point(40, 131);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 21);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Mã NV";
             // 
             // label3
             // 
@@ -169,16 +141,44 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Confirm";
             // 
-            // label5
+            // textBoxMaNV
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label5.Location = new System.Drawing.Point(40, 131);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 21);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Mã NV";
+            this.textBoxMaNV.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBoxMaNV.Location = new System.Drawing.Point(190, 125);
+            this.textBoxMaNV.Multiline = true;
+            this.textBoxMaNV.Name = "textBoxMaNV";
+            this.textBoxMaNV.Size = new System.Drawing.Size(279, 29);
+            this.textBoxMaNV.TabIndex = 6;
+            // 
+            // textBoxConfirm
+            // 
+            this.textBoxConfirm.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBoxConfirm.Location = new System.Drawing.Point(190, 90);
+            this.textBoxConfirm.Multiline = true;
+            this.textBoxConfirm.Name = "textBoxConfirm";
+            this.textBoxConfirm.PasswordChar = '*';
+            this.textBoxConfirm.Size = new System.Drawing.Size(279, 29);
+            this.textBoxConfirm.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(40, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 21);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Username";
+            // 
+            // textBoxUsername
+            // 
+            this.textBoxUsername.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBoxUsername.Location = new System.Drawing.Point(190, 20);
+            this.textBoxUsername.Multiline = true;
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(279, 29);
+            this.textBoxUsername.TabIndex = 1;
             // 
             // buttonDK
             // 
@@ -222,6 +222,7 @@
             this.Name = "DangKy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangKy";
+            this.Load += new System.EventHandler(this.DangKy_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

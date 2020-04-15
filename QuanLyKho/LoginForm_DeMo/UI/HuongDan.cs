@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace LoginForm_DeMo.UI
 {
-    public partial class KhachHang : Form
+    public partial class HuongDan : Form
     {
-        ConnectDatabase data = new ConnectDatabase();
-        public KhachHang()
+        public HuongDan()
         {
             InitializeComponent();
-        }
-
-        private void KhachHang_Load(object sender, EventArgs e)
-        {
-            //data.LoadDataGridView(dataGridViewKhach, "select * from KhachHang");
         }
     }
 }

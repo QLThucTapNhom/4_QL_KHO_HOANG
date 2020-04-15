@@ -39,9 +39,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.txtcttim = new System.Windows.Forms.TextBox();
             this.btnTimCT = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtctbh = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.txtctsp = new System.Windows.Forms.TextBox();
@@ -78,13 +75,14 @@
             this.button4 = new System.Windows.Forms.Button();
             this.buttonhdxoa = new System.Windows.Forms.Button();
             this.buttonhdsua = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoadCT)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoadHD)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -147,10 +145,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button8);
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.panel6);
-            this.groupBox1.Controls.Add(this.panel5);
             this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.Controls.Add(this.panel3);
             this.groupBox1.Controls.Add(this.panel4);
@@ -213,36 +211,11 @@
             this.btnTimCT.UseVisualStyleBackColor = false;
             this.btnTimCT.Click += new System.EventHandler(this.btnTimCT_Click);
             // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label15);
-            this.panel5.Controls.Add(this.txtctbh);
-            this.panel5.Location = new System.Drawing.Point(6, 185);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(235, 35);
-            this.panel5.TabIndex = 45;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(2, 12);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(104, 13);
-            this.label15.TabIndex = 19;
-            this.label15.Text = "Thời Gian Bảo Hành";
-            // 
-            // txtctbh
-            // 
-            this.txtctbh.Location = new System.Drawing.Point(109, 6);
-            this.txtctbh.Name = "txtctbh";
-            this.txtctbh.Size = new System.Drawing.Size(105, 20);
-            this.txtctbh.TabIndex = 43;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.txtctsp);
-            this.panel2.Location = new System.Drawing.Point(6, 60);
+            this.panel2.Location = new System.Drawing.Point(6, 69);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(235, 35);
             this.panel2.TabIndex = 45;
@@ -267,7 +240,7 @@
             // 
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.txtctsl);
-            this.panel3.Location = new System.Drawing.Point(6, 102);
+            this.panel3.Location = new System.Drawing.Point(6, 119);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(235, 35);
             this.panel3.TabIndex = 45;
@@ -292,7 +265,7 @@
             // 
             this.panel4.Controls.Add(this.label14);
             this.panel4.Controls.Add(this.txtctgia);
-            this.panel4.Location = new System.Drawing.Point(6, 144);
+            this.panel4.Location = new System.Drawing.Point(6, 174);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(235, 35);
             this.panel4.TabIndex = 45;
@@ -341,7 +314,7 @@
             // btnXoaCT
             // 
             this.btnXoaCT.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnXoaCT.Location = new System.Drawing.Point(253, 72);
+            this.btnXoaCT.Location = new System.Drawing.Point(253, 108);
             this.btnXoaCT.Name = "btnXoaCT";
             this.btnXoaCT.Size = new System.Drawing.Size(83, 23);
             this.btnXoaCT.TabIndex = 29;
@@ -352,7 +325,7 @@
             // btnThemCT
             // 
             this.btnThemCT.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnThemCT.Location = new System.Drawing.Point(253, 27);
+            this.btnThemCT.Location = new System.Drawing.Point(253, 67);
             this.btnThemCT.Name = "btnThemCT";
             this.btnThemCT.Size = new System.Drawing.Size(83, 23);
             this.btnThemCT.TabIndex = 28;
@@ -362,6 +335,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.button7);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.panel13);
@@ -383,7 +357,7 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button7.Location = new System.Drawing.Point(289, 174);
+            this.button7.Location = new System.Drawing.Point(286, 197);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(91, 39);
             this.button7.TabIndex = 54;
@@ -394,7 +368,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Lime;
-            this.button2.Location = new System.Drawing.Point(307, 242);
+            this.button2.Location = new System.Drawing.Point(320, 242);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(60, 30);
             this.button2.TabIndex = 53;
@@ -534,7 +508,7 @@
             // buttonhdxem
             // 
             this.buttonhdxem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.buttonhdxem.Location = new System.Drawing.Point(268, 109);
+            this.buttonhdxem.Location = new System.Drawing.Point(268, 168);
             this.buttonhdxem.Name = "buttonhdxem";
             this.buttonhdxem.Size = new System.Drawing.Size(70, 23);
             this.buttonhdxem.TabIndex = 34;
@@ -555,7 +529,7 @@
             // buttonhdxoa
             // 
             this.buttonhdxoa.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.buttonhdxoa.Location = new System.Drawing.Point(268, 70);
+            this.buttonhdxoa.Location = new System.Drawing.Point(268, 123);
             this.buttonhdxoa.Name = "buttonhdxoa";
             this.buttonhdxoa.Size = new System.Drawing.Size(70, 23);
             this.buttonhdxoa.TabIndex = 24;
@@ -566,13 +540,35 @@
             // buttonhdsua
             // 
             this.buttonhdsua.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.buttonhdsua.Location = new System.Drawing.Point(268, 19);
+            this.buttonhdsua.Location = new System.Drawing.Point(268, 72);
             this.buttonhdsua.Name = "buttonhdsua";
             this.buttonhdsua.Size = new System.Drawing.Size(70, 23);
             this.buttonhdsua.TabIndex = 23;
             this.buttonhdsua.Text = "Sửa";
             this.buttonhdsua.UseVisualStyleBackColor = false;
             this.buttonhdsua.Click += new System.EventHandler(this.buttonhdsua_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.Location = new System.Drawing.Point(268, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(70, 30);
+            this.button1.TabIndex = 55;
+            this.button1.Text = "Reset";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Lime;
+            this.button8.Location = new System.Drawing.Point(253, 15);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(70, 30);
+            this.button8.TabIndex = 56;
+            this.button8.Text = "Reset";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // NhapHang
             // 
@@ -595,8 +591,6 @@
             this.groupBox1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -634,9 +628,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox txtcttim;
         private System.Windows.Forms.Button btnTimCT;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtctbh;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtctsp;
@@ -673,5 +664,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button buttonhdxoa;
         private System.Windows.Forms.Button buttonhdsua;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button1;
     }
 }

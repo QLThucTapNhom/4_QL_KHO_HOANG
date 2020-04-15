@@ -102,5 +102,10 @@ namespace LoginForm_DeMo
                 textBoxConfirm.UseSystemPasswordChar = false;
             }
         }
+
+        private void DangKy_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

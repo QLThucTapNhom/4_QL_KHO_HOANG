@@ -211,55 +211,80 @@ namespace LoginForm_DeMo.UI
 
         private void btnThemCT_Click(object sender, EventArgs e)
         {
-            if (txtctid.Text == "")
+            string SpId = txtctsp.Text.Trim();
+            string HdId = txtctid.Text.Trim();
+            bool checksp = database.Check(SpId, "select SanPhamID from NhapChiTiet");
+            bool checkhd = database.Check(HdId, "select IdNhap from NhapChiTiet");
+            if (checkhd == false && checksp == false)
             {
-                MessageBox.Show(" Bạn Chưa Nhập ID Muốn Thêm chi tiết vào ");
+                if (txtctid.Text == "")
+                {
+                    MessageBox.Show(" Bạn Chưa Nhập ID Muốn Thêm chi tiết vào ");
+                }
+                else
+                {
+
+                    /*Việc thêm chi tiết cũng khá quan trọng vì ta thêm chi tiết thì ta cần thêm giá tiền vào hóa đơn của nó  và update
+                     lại giá trị của Hàng Tồn kho của Sản Phẩm . Vậy nên em đã tạo 1 trigger cho việc thêm chi tiết ở modul 3*/
+                    //command = connection.CreateCommand();
+                    string insert = "insert into NhapChiTiet(IdNhap,SanPhamID,SoLuong) values(N'" + txtctid.Text + "', N'" + txtctsp.Text + "', " + txtctsl.Text + ")";
+                    //command.ExecuteNonQuery();
+                    database.SQLConnection(insert);
+                    //LoadChiTietHD();
+                    database.LoadDataGridView(LoadCT, "select * from NhapChiTiet ");
+
+
+                    //LoadHoaDon();
+                    database.LoadDataGridView(LoadHD, "select * from HoaDonNhap");
+                    MessageBox.Show(" Thêm Chi Tiết HD thành công !");
+
+                }
             }
             else
             {
-
-                /*Việc thêm chi tiết cũng khá quan trọng vì ta thêm chi tiết thì ta cần thêm giá tiền vào hóa đơn của nó  và update
-                 lại giá trị của Hàng Tồn kho của Sản Phẩm . Vậy nên em đã tạo 1 trigger cho việc thêm chi tiết ở modul 3*/
-                //command = connection.CreateCommand();
-                string insert = "insert into NhapChiTiet(IdNhap,SanPhamID,SoLuong) values(N'" + txtctid.Text + "', N'" + txtctsp.Text + "', " + txtctsl.Text + ")";
-                //command.ExecuteNonQuery();
-                database.SQLConnection(insert);
-                //LoadChiTietHD();
-                database.LoadDataGridView(LoadCT, "select * from NhapChiTiet ");
-
-
-                //LoadHoaDon();
-                database.LoadDataGridView(LoadHD, "select * from HoaDonNhap");
-                MessageBox.Show(" Thêm Chi Tiết HD thành công !");
+                MessageBox.Show("Chi tiết Hóa đơn này đã tồn tại ");
 
             }
+
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (txtctid.Text == "")
+            string HdId = txthdid.Text.Trim();
+            bool checkhd = database.Check(HdId, "select IdNhap from HoaDonNhap");
+
+
+            if (checkhd == false)
             {
-                MessageBox.Show("Chưa Có Hóa Đơn Cần Thêm");
+                if (txtctid.Text == "")
+                {
+                    MessageBox.Show("Chưa Có Hóa Đơn Cần Thêm");
+                }
+                else
+                {
+                    string ngay = txthddate.Value.ToString("MM-dd-yyy");
+
+                    /*Vì quá trình thêm khá phức tạp khi thêm 1 hóa đơn thì phải xem số lượng kho Sản Phẩm
+                     có đủ không không đủ thì thông báo và đủ thì bán và giảm số lượng tồn đi sau đó update đơn giá
+                     vào Chi Tiết HD từ đó tính tổng tiền vào HD cần bán . Nên em đã tạp 1 trigger cho quá trình thêm này 
+                     vào datatable của bài cho tiện trong quá trình sử dụng ở modul 3. */
+                    //command = connection.CreateCommand();
+                    string insert = "insert into HoaDonNhap(IdNhap,NgayHD,NhanVienID) values(N'" + txthdid.Text + "','" + ngay + "', N'" + txthdnv.Text + "')" +
+                        "insert into NhapChiTiet (IdNhap,SanPhamID,SoLuong) values(N'" + txtctid.Text + "', N'" + txtctsp.Text + "', " + txtctsl.Text + ")";
+                    //command.ExecuteNonQuery();
+                    database.SQLConnection(insert);
+                    //LoadChiTietHD();
+                    database.LoadDataGridView(LoadCT, "select * from NhapChiTiet ");
+                    //LoadHoaDon();
+                    database.LoadDataGridView(LoadHD, "select * from HoaDonNhap");
+                    MessageBox.Show(" Thêm Hóa đơn thành công !");
+                }
             }
             else
             {
-                string ngay = txthddate.Value.ToString("MM-dd-yyy");
-
-                /*Vì quá trình thêm khá phức tạp khi thêm 1 hóa đơn thì phải xem số lượng kho Sản Phẩm
-                 có đủ không không đủ thì thông báo và đủ thì bán và giảm số lượng tồn đi sau đó update đơn giá
-                 vào Chi Tiết HD từ đó tính tổng tiền vào HD cần bán . Nên em đã tạp 1 trigger cho quá trình thêm này 
-                 vào datatable của bài cho tiện trong quá trình sử dụng ở modul 3. */
-                //command = connection.CreateCommand();
-                string insert = "insert into HoaDonNhap(IdNhap,NgayHD,NhanVienID) values(N'" + txthdid.Text + "','" + ngay + "', N'" + txthdnv.Text + "')" +
-                    "insert into NhapChiTiet (IdNhap,SanPhamID,SoLuong) values(N'" + txtctid.Text + "', N'" + txtctsp.Text + "', " + txtctsl.Text + ")";
-                //command.ExecuteNonQuery();
-                database.SQLConnection(insert);
-                //LoadChiTietHD();
-                database.LoadDataGridView(LoadCT, "select * from NhapChiTiet ");
-                //LoadHoaDon();
-                database.LoadDataGridView(LoadHD, "select * from HoaDonNhap");
-                MessageBox.Show(" Thêm Hóa đơn thành công !");
+                MessageBox.Show("Hóa đơn này đã tồn tại ");
             }
+
         }
 
         private void LoadHD_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -292,6 +317,24 @@ namespace LoginForm_DeMo.UI
         private void button8_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txthdid.Text = "";
+            txthdnv.Text = "";
+            txthdtien.Text = "";
+            txthdtim.Text = "";
+            txthddate.Text = "12/04/2020";
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            txtctid.Text = "";
+            txtctsp.Text = "";
+            txtctsl.Text = "";
+            txtctgia.Text = "";
+            txtcttim.Text = "";
         }
     }
 }
