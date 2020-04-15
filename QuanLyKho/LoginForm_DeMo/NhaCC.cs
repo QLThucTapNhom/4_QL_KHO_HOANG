@@ -124,7 +124,7 @@ namespace LoginForm_DeMo
             try
             {
                 string maNCC = txt_maNCC.Text.TrimEnd();
-                bool check = database.Check(maNCC, "SELECT MaLuong from dbo.Luong");
+                bool check = database.Check(maNCC, "SELECT NhaCungCapID from dbo.NhaCungCap");
                 if (check == true)
                 {
 
