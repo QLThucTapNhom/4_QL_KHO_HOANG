@@ -20,7 +20,7 @@ namespace LoginForm_DeMo.UI
 
         private void KhachHang_Load(object sender, EventArgs e)
         {
-            data.LoadDataGridView(dataGridViewKhach, "select * from KhachHang");
+            //data.LoadDataGridView(dataGridViewKhach, "select * from KhachHang");
         }
     }
 }

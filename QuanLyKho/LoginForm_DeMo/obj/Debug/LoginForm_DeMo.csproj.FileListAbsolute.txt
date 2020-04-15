@@ -191,115 +191,66 @@ D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.cspro
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.CopyComplete
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.exe
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.pdb
-<<<<<<< HEAD
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x64\msvcr120.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x86\msvcr120.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\LoginForm_DeMo.exe.config
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\LoginForm_DeMo.exe
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\LoginForm_DeMo.pdb
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.Common.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.DataVisualization.DLL
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.Design.DLL
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.WebDesign.DLL
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.SqlServer.Types.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\EnvDTE.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\EnvDTE80.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\stdole.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\VSLangProj.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\VSLangProj80.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.MSXML.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.Windows.Design.Interaction.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\VSLangProj2.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.Windows.Design.Interaction.xml
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csprojAssemblyReference.cache
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.exe.config
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Login.resources
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.HangHoa.resources
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Menu.resources
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.NhaCC.resources
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Properties.Resources.resources
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.NhapHang.resources
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.ReportNhap.resources
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.ReportXuat.resources
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.TaiKhoan.resources
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.XuatHang.resources
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.GenerateResource.cache
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.CoreCompileInputs.cache
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.CopyComplete
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.exe
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.pdb
-=======
 D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.KhachHang.resources
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.DangKy.resources
 D:\GITHUB\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.KhachHang.resources
-D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.DangKy.resources
-<<<<<<< HEAD
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x64\msvcr120.dll
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x86\msvcr120.dll
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\LoginForm_DeMo.exe.config
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\LoginForm_DeMo.exe
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\LoginForm_DeMo.pdb
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.Common.dll
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.DataVisualization.DLL
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.Design.DLL
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.WebDesign.DLL
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.SqlServer.Types.dll
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\EnvDTE.dll
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\EnvDTE80.dll
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\stdole.dll
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.MSXML.dll
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csprojAssemblyReference.cache
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.DangKy.resources
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Login.resources
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.HangHoa.resources
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Menu.resources
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.NhaCC.resources
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Properties.Resources.resources
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.KhachHang.resources
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.NhapHang.resources
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.TaiKhoan.resources
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.XuatHang.resources
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.GenerateResource.cache
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.CoreCompileInputs.cache
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.CopyComplete
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.exe
-D:\Hoc ky 6\tt nhóm\Hung\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.pdb
-=======
->>>>>>> 1b0a32c9fc662ed765a5b6c57b256cb5e4f5e5a3
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.DangKy.resources
-C:\Users\HP\OneDrive\Hình ảnh\git dow\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.KhachHang.resources
->>>>>>> 2e7aaed69ddca9983e488dfef81db7a136020a56
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\LoginForm_DeMo.exe.config
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\LoginForm_DeMo.exe
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\LoginForm_DeMo.pdb
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.DataVisualization.DLL
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.Design.DLL
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.WebDesign.DLL
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\EnvDTE.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\EnvDTE80.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\stdole.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\VSLangProj.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\VSLangProj80.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.MSXML.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\VSLangProj2.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csprojAssemblyReference.cache
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.exe.config
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.DangKy.resources
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Login.resources
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.HangHoa.resources
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Menu.resources
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.NhaCC.resources
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Properties.Resources.resources
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.KhachHang.resources
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.NhapHang.resources
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.TaiKhoan.resources
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.XuatHang.resources
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.GenerateResource.cache
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.CoreCompileInputs.cache
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.CopyComplete
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.exe
+D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.pdb

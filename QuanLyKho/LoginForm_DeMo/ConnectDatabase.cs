@@ -14,11 +14,7 @@ namespace LoginForm_DeMo
 
         SqlConnection connection;
         SqlCommand command;
-
-        string str = @"Data Source=DESKTOP-0FP3KIB\MSSQLSERVEROK;Initial Catalog=QLKho;Integrated Security=True";
-
-   
-
+        string str = @"Data Source=DESKTOP-4H2CDN2; Initial Catalog = QLKho; Integrated Security = True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         SqlDataReader reader;
 
@@ -75,6 +71,7 @@ namespace LoginForm_DeMo
             Disconnect();
             return check;
         }
+
 
 
 
