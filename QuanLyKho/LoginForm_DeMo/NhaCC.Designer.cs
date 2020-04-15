@@ -31,6 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridViewNCC = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.buttonTimKiem = new System.Windows.Forms.Button();
             this.dateTimePickerHHD = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,6 +39,8 @@
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.labelSDT = new System.Windows.Forms.Label();
             this.buttonLamMoi = new System.Windows.Forms.Button();
+=======
+>>>>>>> 2e7aaed69ddca9983e488dfef81db7a136020a56
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnxoa = new System.Windows.Forms.Button();
             this.btnsua = new System.Windows.Forms.Button();
@@ -53,6 +56,13 @@
             this.txtmaNCC = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonLamMoi = new System.Windows.Forms.Button();
+            this.labelSDT = new System.Windows.Forms.Label();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtTTT = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePickerHHD = new System.Windows.Forms.DateTimePicker();
+            this.buttonTimKiem = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNCC)).BeginInit();
             this.panel2.SuspendLayout();
@@ -77,7 +87,11 @@
             this.dataGridViewNCC.Name = "dataGridViewNCC";
             this.dataGridViewNCC.Size = new System.Drawing.Size(750, 159);
             this.dataGridViewNCC.TabIndex = 67;
+<<<<<<< HEAD
             this.dataGridViewNCC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewNCC_CellContentClick);
+=======
+            this.dataGridViewNCC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewNCC_CellContentClick);
+>>>>>>> 2e7aaed69ddca9983e488dfef81db7a136020a56
             // 
             // panel2
             // 
@@ -105,7 +119,9 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(750, 241);
             this.panel2.TabIndex = 66;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
+<<<<<<< HEAD
             // buttonTimKiem
             // 
             this.buttonTimKiem.BackColor = System.Drawing.SystemColors.Highlight;
@@ -174,6 +190,8 @@
             this.buttonLamMoi.UseVisualStyleBackColor = false;
             this.buttonLamMoi.Click += new System.EventHandler(this.buttonLamMoi_Click);
             // 
+=======
+>>>>>>> 2e7aaed69ddca9983e488dfef81db7a136020a56
             // txtSearch
             // 
             this.txtSearch.Location = new System.Drawing.Point(504, 199);
@@ -192,7 +210,11 @@
             this.btnxoa.TabIndex = 69;
             this.btnxoa.Text = "Xóa";
             this.btnxoa.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
             this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
+=======
+            this.btnxoa.Click += new System.EventHandler(this.Btnxoa_Click);
+>>>>>>> 2e7aaed69ddca9983e488dfef81db7a136020a56
             // 
             // btnsua
             // 
@@ -204,7 +226,11 @@
             this.btnsua.TabIndex = 70;
             this.btnsua.Text = "Sửa";
             this.btnsua.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
             this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
+=======
+            this.btnsua.Click += new System.EventHandler(this.Btnsua_Click);
+>>>>>>> 2e7aaed69ddca9983e488dfef81db7a136020a56
             // 
             // btnthem
             // 
@@ -216,7 +242,11 @@
             this.btnthem.TabIndex = 71;
             this.btnthem.Text = "Thêm";
             this.btnthem.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
             this.btnthem.Click += new System.EventHandler(this.btnthem_Click_1);
+=======
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
+>>>>>>> 2e7aaed69ddca9983e488dfef81db7a136020a56
             // 
             // txt_email
             // 
@@ -319,6 +349,74 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "NHÀ CUNG CẤP";
             // 
+            // buttonLamMoi
+            // 
+            this.buttonLamMoi.BackColor = System.Drawing.SystemColors.Highlight;
+            this.buttonLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLamMoi.Location = new System.Drawing.Point(37, 194);
+            this.buttonLamMoi.Name = "buttonLamMoi";
+            this.buttonLamMoi.Size = new System.Drawing.Size(106, 33);
+            this.buttonLamMoi.TabIndex = 74;
+            this.buttonLamMoi.Text = "Mới";
+            this.buttonLamMoi.UseVisualStyleBackColor = false;
+            this.buttonLamMoi.Click += new System.EventHandler(this.ButtonLamMoi_Click);
+            // 
+            // labelSDT
+            // 
+            this.labelSDT.AutoSize = true;
+            this.labelSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSDT.Location = new System.Drawing.Point(389, 21);
+            this.labelSDT.Name = "labelSDT";
+            this.labelSDT.Size = new System.Drawing.Size(106, 16);
+            this.labelSDT.TabIndex = 75;
+            this.labelSDT.Text = "Số Điện Thoại";
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Location = new System.Drawing.Point(504, 12);
+            this.txtSDT.Multiline = true;
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(193, 25);
+            this.txtSDT.TabIndex = 76;
+            // 
+            // txtTTT
+            // 
+            this.txtTTT.Location = new System.Drawing.Point(504, 101);
+            this.txtTTT.Multiline = true;
+            this.txtTTT.Name = "txtTTT";
+            this.txtTTT.Size = new System.Drawing.Size(193, 26);
+            this.txtTTT.TabIndex = 77;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(389, 111);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(109, 16);
+            this.label2.TabIndex = 78;
+            this.label2.Text = "Thông tin thêm";
+            // 
+            // dateTimePickerHHD
+            // 
+            this.dateTimePickerHHD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerHHD.Location = new System.Drawing.Point(504, 60);
+            this.dateTimePickerHHD.Name = "dateTimePickerHHD";
+            this.dateTimePickerHHD.Size = new System.Drawing.Size(111, 20);
+            this.dateTimePickerHHD.TabIndex = 79;
+            // 
+            // buttonTimKiem
+            // 
+            this.buttonTimKiem.BackColor = System.Drawing.SystemColors.Highlight;
+            this.buttonTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTimKiem.Location = new System.Drawing.Point(504, 146);
+            this.buttonTimKiem.Name = "buttonTimKiem";
+            this.buttonTimKiem.Size = new System.Drawing.Size(111, 33);
+            this.buttonTimKiem.TabIndex = 80;
+            this.buttonTimKiem.Text = "Tìm Kiếm";
+            this.buttonTimKiem.UseVisualStyleBackColor = false;
+            this.buttonTimKiem.Click += new System.EventHandler(this.ButtonTimKiem_Click);
+            // 
             // NhaCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -365,5 +463,16 @@
         private System.Windows.Forms.Label txtmaNCC;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button buttonLamMoi;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtTTT;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.Label labelSDT;
+        private System.Windows.Forms.DateTimePicker dateTimePickerHHD;
+        private System.Windows.Forms.Button buttonTimKiem;
+>>>>>>> 2e7aaed69ddca9983e488dfef81db7a136020a56
     }
 }
