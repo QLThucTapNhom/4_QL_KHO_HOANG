@@ -9,12 +9,12 @@ using System.Data;
 
 namespace LoginForm_DeMo
 {
-    class ConnectDatabase
+    public class ConnectDatabase
     {
 
         SqlConnection connection;
         SqlCommand command;
-        string str = @"Data Source=WIN10PRO\SQLEXPRESS; Initial Catalog = QLKho; Integrated Security = True";
+        string str = @"Data Source=ADMIN;Initial Catalog=QLKho;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         SqlDataReader reader;
 
@@ -55,6 +55,18 @@ namespace LoginForm_DeMo
             command.ExecuteNonQuery();
             Disconnect();
         }
+        public void loadTextBox(TextBox tb, string strselect)
+        {
+            Connect();
+            command = new SqlCommand(strselect, connection);
+            reader = command.ExecuteReader();
+
+            if (reader.Read())
+            {
+                tb.Text = reader[0].ToString();
+            }
+            Disconnect();
+        }
         //Kiểm tra dữ liệu đã tồn tại trong database hay chưa
         public bool Check(string temp, string strsql)
         {
@@ -71,7 +83,17 @@ namespace LoginForm_DeMo
             Disconnect();
             return check;
         }
-
+        public void loadDatetimePicker(DateTimePicker dtp, string str)
+        {
+            Connect();
+            command = new SqlCommand(str, connection);
+            reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+                dtp.Text = reader[0].ToString();
+            }
+            Disconnect();
+        }
 
 
 

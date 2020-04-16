@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,18 @@ namespace LoginForm_DeMo
         public Menu()
         {
             InitializeComponent();
+        }
+        private string _tenTK;
+        public string TenTK
+        {
+            get { return _tenTK; }
+            set { _tenTK = value; }
+        }
+        private string _tenMK;
+        public string TenMK
+        {
+            get { return _tenMK; }
+            set { _tenMK = value; }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -96,6 +109,8 @@ namespace LoginForm_DeMo
         private void button5_Click(object sender, EventArgs e)
         {
             TaiKhoan tk = new TaiKhoan();
+            tk.TenTK = _tenTK;
+            tk.TenMK = _tenMK;
             tk.Show();
         }
 
@@ -129,6 +144,11 @@ namespace LoginForm_DeMo
                     ctrl.Dispose();
             }
             hh.Show();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

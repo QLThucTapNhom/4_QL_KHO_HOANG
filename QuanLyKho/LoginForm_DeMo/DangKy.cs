@@ -107,5 +107,10 @@ namespace LoginForm_DeMo
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

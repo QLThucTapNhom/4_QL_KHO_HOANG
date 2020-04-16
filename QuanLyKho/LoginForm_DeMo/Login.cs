@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using LoginForm_DeMo.UI;
 
 namespace LoginForm_DeMo
 {
@@ -18,6 +19,7 @@ namespace LoginForm_DeMo
         {
             InitializeComponent();
         }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -51,13 +53,13 @@ namespace LoginForm_DeMo
             }
             else
             {
-
-                
-                bool check = db.Check(textpass.Text.Trim(), "SELECT pass FROM dbo.TaiKhoan WHERE acc=N'"+ textacc.Text.Trim()+"'");
-                if (check==true)
+                bool check = db.Check(textpass.Text.Trim(), "SELECT pass FROM dbo.TaiKhoan WHERE acc=N'" + textacc.Text.Trim() + "'");
+                if (check == true)
                 {
-                    
+
                     Menu sp = new Menu();
+                    sp.TenTK = textacc.Text.Trim();
+                    sp.TenMK = textpass.Text.Trim();
                     sp.Show();
                     this.Hide();
                 }
@@ -86,6 +88,11 @@ namespace LoginForm_DeMo
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textacc_TextChanged(object sender, EventArgs e)
         {
 
         }
