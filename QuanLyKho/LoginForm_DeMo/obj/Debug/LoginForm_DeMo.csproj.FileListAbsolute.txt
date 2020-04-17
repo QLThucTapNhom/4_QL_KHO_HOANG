@@ -254,7 +254,6 @@ D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\Logi
 D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.exe
 D:\GITHUB\4_QL_KHO_HOANG-b417c4d9e6f93da1cf3bfec8098792b70804c30c\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.pdb
 D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.DangKy.resources
-D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.HuongDan.resources
 C:\Users\Admin\Downloads\4_QL_KHO_HOANG-master\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 C:\Users\Admin\Downloads\4_QL_KHO_HOANG-master\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Users\Admin\Downloads\4_QL_KHO_HOANG-master\QuanLyKho\LoginForm_DeMo\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -295,3 +294,5 @@ C:\Users\Admin\Downloads\4_QL_KHO_HOANG-master\QuanLyKho\LoginForm_DeMo\obj\Debu
 C:\Users\Admin\Downloads\4_QL_KHO_HOANG-master\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.CopyComplete
 C:\Users\Admin\Downloads\4_QL_KHO_HOANG-master\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.exe
 C:\Users\Admin\Downloads\4_QL_KHO_HOANG-master\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.pdb
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.GioiThieu.resources
+D:\Hoc ky 6\tt nhóm\Nhom\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.ThongKe.resources

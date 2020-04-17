@@ -135,7 +135,7 @@ namespace LoginForm_DeMo
 
         private void button8_Click(object sender, EventArgs e)
         {
-            HuongDan hh = new HuongDan() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            ThongKe hh = new ThongKe() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             hh.FormBorderStyle = FormBorderStyle.None;
             this.panelControl.Controls.Add(hh);
             foreach (Control ctrl in panelControl.Controls)
@@ -149,6 +149,19 @@ namespace LoginForm_DeMo
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            GioiThieu hh = new GioiThieu() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            hh.FormBorderStyle = FormBorderStyle.None;
+            this.panelControl.Controls.Add(hh);
+            foreach (Control ctrl in panelControl.Controls)
+            {
+                if (ctrl != hh)
+                    ctrl.Dispose();
+            }
+            hh.Show();
         }
     }
 }

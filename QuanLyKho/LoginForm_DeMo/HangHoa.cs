@@ -123,6 +123,13 @@ namespace LoginForm_DeMo
 
         private void button3_Click(object sender, EventArgs e)
         {
+
+            string idsp = txtid.Text.Trim();
+            bool check = database.Check(idsp, "select SanPhamID from SanPham  ");
+          if(check==false)
+          {
+
+                
             if (txtid.Text == "")
             {
                 MessageBox.Show("Chưa có thông tin để thêm");
@@ -140,6 +147,12 @@ namespace LoginForm_DeMo
                 MessageBox.Show("Thêm sản Phẩm thành công !");
 
             }
+          }
+          else
+            {
+                MessageBox.Show("sản phẩm này đã tồn tại");
+
+            }    
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LoginForm_DeMo.UI
 {
-    public partial class HuongDan : Form
+    public partial class GioiThieu : Form
     {
-        public HuongDan()
+        public GioiThieu()
         {
             InitializeComponent();
         }
