@@ -203,7 +203,7 @@ create Trigger Delete_Nhap on HoaDonNhap instead of Delete
 			insert into NhapChiTiet(SanPhamID,IdNhap,SoLuong)
 			values (@masp,@mahd,@soluong)
 			update SanPham
-			set SoLuongTon=SoLuongTon-@soluong
+			set SoLuongTon=SoLuongTon + @soluong
 			where SanPhamID=@masp
 			update NhapChiTiet
 			set DonGia=(select DonGiaSanPham from SanPham where SanPhamID=@masp)

@@ -30,7 +30,7 @@ namespace LoginForm_DeMo.UI
         {
             if (rdb_nhap.Checked == true)
             {
-                string a = "select ct.SanPhamID, sp.TenSanPham, cc.TenNhaCungCap, ct.SoLuong, 'Tong Tien' = ct.DonGia * ct.SoLuong, hd.NgayHD from NhapChiTiet ct, HoaDonNhap hd, SanPham sp, NhaCungCap cc where sp.SanPhamID = ct.SanPhamID and ct.IdNhap = hd.IdNhap and sp.NhaCungCapID = cc.NhaCungCapID";
+                string a = "select ct.SanPhamID, sp.TenSanPham,sp.Hang,sp.XuatXu ,sp.MauSac ,sp.SoLuongTon , ct.SoLuong, 'Tong Tien' = ct.DonGia * ct.SoLuong, hd.NgayHD from NhapChiTiet ct, HoaDonNhap hd, SanPham sp where sp.SanPhamID = ct.SanPhamID and ct.IdNhap = hd.IdNhap";
                 database.LoadDataGridView(Loadd, a);
             }
         }
@@ -39,9 +39,14 @@ namespace LoginForm_DeMo.UI
         {
             if (rdb_xuat.Checked == true)
             {
-                string b = "select ct.SanPhamID, sp.TenSanPham, cc.TenNhaCungCap, ct.SoLuong, 'Tong Tien' = ct.DonGia * ct.SoLuong, hd.NgayHD from XuatChiTiet ct, HoaDonXuat hd, SanPham sp, NhaCungCap cc where sp.SanPhamID = ct.SanPhamID and ct.IdXuat = hd.IdXuat and sp.NhaCungCapID = cc.NhaCungCapID";
+                string b = "select ct.SanPhamID, sp.TenSanPham,sp.Hang,sp.XuatXu ,sp.MauSac ,sp.SoLuongTon ,  ct.SoLuong, 'Tong Tien' = ct.DonGia * ct.SoLuong, hd.NgayHD from XuatChiTiet ct, HoaDonXuat hd, SanPham sp where sp.SanPhamID = ct.SanPhamID and ct.IdXuat = hd.IdXuat ";
                 database.LoadDataGridView(Loadd, b);
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
