@@ -14,7 +14,7 @@ namespace LoginForm_DeMo
 
         SqlConnection connection;
         SqlCommand command;
-        string str = @"Data Source=WIN10PRO\SQLEXPRESS;Initial Catalog=QLKho;Integrated Security=True";
+        string str = @"Data Source=DESKTOP-G186E8N\SQLEXPRESS;Initial Catalog=QLKho;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         SqlDataReader reader;
 

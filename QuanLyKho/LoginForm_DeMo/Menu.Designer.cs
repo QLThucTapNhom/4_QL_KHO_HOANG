@@ -30,6 +30,9 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panelControl = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -37,11 +40,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.panelControl = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -74,6 +74,42 @@
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // panelControl
+            // 
+            this.panelControl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelControl.Location = new System.Drawing.Point(142, 96);
+            this.panelControl.Name = "panelControl";
+            this.panelControl.Size = new System.Drawing.Size(787, 516);
+            this.panelControl.TabIndex = 4;
+            this.panelControl.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl_Paint);
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel3.Controls.Add(this.button7);
+            this.panel3.Controls.Add(this.button5);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(926, 87);
+            this.panel3.TabIndex = 3;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(276, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(432, 36);
+            this.label1.TabIndex = 0;
+            this.label1.Text = " HỆ THỐNG QUẢN LÝ KHO";
+            // 
             // button9
             // 
             this.button9.BackgroundImage = global::LoginForm_DeMo.Properties.Resources._133;
@@ -93,12 +129,13 @@
             this.button8.BackgroundImage = global::LoginForm_DeMo.Properties.Resources._133;
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button8.Image = global::LoginForm_DeMo.Properties.Resources.rsz_1rsz_lew;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.Location = new System.Drawing.Point(0, 325);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(136, 42);
             this.button8.TabIndex = 6;
-            this.button8.Text = "Thống Kê Hàng";
+            this.button8.Text = "   Thống Kê Hàng";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
@@ -177,30 +214,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panelControl
-            // 
-            this.panelControl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelControl.Location = new System.Drawing.Point(142, 96);
-            this.panelControl.Name = "panelControl";
-            this.panelControl.Size = new System.Drawing.Size(787, 516);
-            this.panelControl.TabIndex = 4;
-            this.panelControl.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl_Paint);
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel3.Controls.Add(this.button7);
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(926, 87);
-            this.panel3.TabIndex = 3;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.SystemColors.Highlight;
@@ -222,18 +235,6 @@
             this.button5.TabIndex = 2;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(276, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(432, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = " HỆ THỐNG QUẢN LÝ KHO";
             // 
             // Menu
             // 

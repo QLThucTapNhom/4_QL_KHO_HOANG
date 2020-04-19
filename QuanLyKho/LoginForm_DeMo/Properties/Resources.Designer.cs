@@ -213,6 +213,16 @@ namespace LoginForm_DeMo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rsz_1rsz_lew {
+            get {
+                object obj = ResourceManager.GetObject("rsz_1rsz_lew", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Tổng_hợp_những_hình_ảnh_Icon_đáng_yêu_cute_nhất_48 {
             get {
                 object obj = ResourceManager.GetObject("Tổng-hợp-những-hình-ảnh-Icon-đáng-yêu-cute-nhất-48", resourceCulture);

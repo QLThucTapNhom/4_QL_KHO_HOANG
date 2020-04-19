@@ -35,11 +35,11 @@
             this.rdb_nhap = new System.Windows.Forms.RadioButton();
             this.rdb_hh = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Load = new System.Windows.Forms.DataGridView();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Load)).BeginInit();
             this.SuspendLayout();
             // 
             // panel6
@@ -83,6 +83,7 @@
             this.rdb_xuat.TabStop = true;
             this.rdb_xuat.Text = "Hàng đã xuất";
             this.rdb_xuat.UseVisualStyleBackColor = true;
+            this.rdb_xuat.CheckedChanged += new System.EventHandler(this.rdb_xuat_CheckedChanged);
             // 
             // rdb_nhap
             // 
@@ -95,6 +96,7 @@
             this.rdb_nhap.TabStop = true;
             this.rdb_nhap.Text = "Hàng đã nhập";
             this.rdb_nhap.UseVisualStyleBackColor = true;
+            this.rdb_nhap.CheckedChanged += new System.EventHandler(this.rdb_nhap_CheckedChanged);
             // 
             // rdb_hh
             // 
@@ -107,10 +109,11 @@
             this.rdb_hh.TabStop = true;
             this.rdb_hh.Text = "Hàng Tồn Kho";
             this.rdb_hh.UseVisualStyleBackColor = true;
+            this.rdb_hh.CheckedChanged += new System.EventHandler(this.rdb_hh_CheckedChanged);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.Load);
             this.groupBox1.Location = new System.Drawing.Point(0, 208);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(796, 243);
@@ -118,13 +121,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Mặt Hàng";
             // 
-            // dataGridView1
+            // Load
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(784, 218);
-            this.dataGridView1.TabIndex = 0;
+            this.Load.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Load.Location = new System.Drawing.Point(6, 19);
+            this.Load.Name = "Load";
+            this.Load.Size = new System.Drawing.Size(784, 218);
+            this.Load.TabIndex = 0;
             // 
             // ThongKe
             // 
@@ -141,7 +144,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Load)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -155,6 +158,6 @@
         private System.Windows.Forms.RadioButton rdb_nhap;
         private System.Windows.Forms.RadioButton rdb_hh;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView Load;
     }
 }

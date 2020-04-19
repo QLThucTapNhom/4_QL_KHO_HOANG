@@ -226,6 +226,7 @@
     <None Include="Resources\www.png" />
     <None Include="Resources\ncc.png" />
     <None Include="Resources\close1.png" />
+    <None Include="Resources\rsz_1rsz_lew.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
