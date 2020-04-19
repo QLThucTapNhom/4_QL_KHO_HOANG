@@ -35,11 +35,11 @@
             this.rdb_nhap = new System.Windows.Forms.RadioButton();
             this.rdb_hh = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Load = new System.Windows.Forms.DataGridView();
+            this.Loadd = new System.Windows.Forms.DataGridView();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Load)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Loadd)).BeginInit();
             this.SuspendLayout();
             // 
             // panel6
@@ -113,7 +113,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.Load);
+            this.groupBox1.Controls.Add(this.Loadd);
             this.groupBox1.Location = new System.Drawing.Point(0, 208);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(796, 243);
@@ -121,13 +121,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Mặt Hàng";
             // 
-            // Load
+            // Loadd
             // 
-            this.Load.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Load.Location = new System.Drawing.Point(6, 19);
-            this.Load.Name = "Load";
-            this.Load.Size = new System.Drawing.Size(784, 218);
-            this.Load.TabIndex = 0;
+            this.Loadd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Loadd.Location = new System.Drawing.Point(6, 19);
+            this.Loadd.Name = "Loadd";
+            this.Loadd.Size = new System.Drawing.Size(784, 218);
+            this.Loadd.TabIndex = 0;
             // 
             // ThongKe
             // 
@@ -144,7 +144,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Load)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Loadd)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -158,6 +158,6 @@
         private System.Windows.Forms.RadioButton rdb_nhap;
         private System.Windows.Forms.RadioButton rdb_hh;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView Load;
+        private System.Windows.Forms.DataGridView Loadd;
     }
 }
