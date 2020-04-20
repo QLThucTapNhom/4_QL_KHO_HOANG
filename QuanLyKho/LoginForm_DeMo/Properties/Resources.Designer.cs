@@ -113,6 +113,26 @@ namespace LoginForm_DeMo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap books_icon {
+            get {
+                object obj = ResourceManager.GetObject("books-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap books_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("books-icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap close1 {
             get {
                 object obj = ResourceManager.GetObject("close1", resourceCulture);
@@ -196,6 +216,26 @@ namespace LoginForm_DeMo.Properties {
         internal static System.Drawing.Bitmap ncc {
             get {
                 object obj = ResourceManager.GetObject("ncc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Notice_Info_icon {
+            get {
+                object obj = ResourceManager.GetObject("Notice-Info-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Notice_Info_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Notice-Info-icon (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

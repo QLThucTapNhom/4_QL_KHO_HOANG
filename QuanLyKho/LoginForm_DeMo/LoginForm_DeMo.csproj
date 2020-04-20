@@ -227,6 +227,10 @@
     <None Include="Resources\ncc.png" />
     <None Include="Resources\close1.png" />
     <None Include="Resources\rsz_1rsz_lew.png" />
+    <None Include="Resources\books-icon.png" />
+    <None Include="Resources\Notice-Info-icon.png" />
+    <None Include="Resources\Notice-Info-icon %281%29.png" />
+    <None Include="Resources\books-icon1.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

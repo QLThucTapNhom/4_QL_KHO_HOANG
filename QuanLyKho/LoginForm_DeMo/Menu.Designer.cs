@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelControl = new System.Windows.Forms.Panel();
@@ -115,6 +116,7 @@
             this.button9.BackgroundImage = global::LoginForm_DeMo.Properties.Resources._133;
             this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button9.Image = global::LoginForm_DeMo.Properties.Resources.Notice_Info_icon__1_;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button9.Location = new System.Drawing.Point(0, 399);
             this.button9.Name = "button9";
@@ -129,7 +131,7 @@
             this.button8.BackgroundImage = global::LoginForm_DeMo.Properties.Resources._133;
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button8.Image = global::LoginForm_DeMo.Properties.Resources.rsz_1rsz_lew;
+            this.button8.Image = global::LoginForm_DeMo.Properties.Resources.books_icon1;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.Location = new System.Drawing.Point(0, 325);
             this.button8.Name = "button8";
@@ -243,6 +245,7 @@
             this.ClientSize = new System.Drawing.Size(936, 618);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
