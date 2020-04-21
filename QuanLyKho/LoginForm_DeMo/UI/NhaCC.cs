@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LoginForm_DeMo
+namespace LoginForm_DeMo.UI
 {
     public partial class NhaCC : Form
     {

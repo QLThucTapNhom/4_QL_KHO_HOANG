@@ -63,10 +63,13 @@ namespace LoginForm_DeMo
 
         private void button6_Click(object sender, EventArgs e)
         {
-            DialogResult h = MessageBox.Show("Do you wat exit program ?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
-            if (h == DialogResult.Yes)
+            DialogResult result;
+            result = MessageBox.Show("Bạn muốn đăng xuất không?", "Công việc có thể chưa hoàn tất.", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.Yes)
             {
-                Application.Exit();
+                Login lg = new Login();
+                lg.Show();
+                this.Hide();
             }
         }
 

@@ -1,4 +1,4 @@
-﻿namespace LoginForm_DeMo
+﻿namespace LoginForm_DeMo.UI
 {
     partial class DangKy
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangKy));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.check_Show = new System.Windows.Forms.CheckBox();
@@ -214,12 +215,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LoginForm_DeMo.Properties.Resources._01001101101101108_jpg;
-            this.ClientSize = new System.Drawing.Size(651, 400);
+            this.ClientSize = new System.Drawing.Size(651, 403);
             this.Controls.Add(this.buttonDK);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DangKy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangKy";

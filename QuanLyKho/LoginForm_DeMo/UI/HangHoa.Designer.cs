@@ -1,4 +1,4 @@
-﻿namespace LoginForm_DeMo
+﻿namespace LoginForm_DeMo.UI
 {
     partial class HangHoa
     {

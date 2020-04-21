@@ -72,10 +72,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectDatabase.cs" />
-    <Compile Include="DangKy.cs">
+    <Compile Include="UI\DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DangKy.Designer.cs">
+    <Compile Include="UI\DangKy.Designer.cs">
       <DependentUpon>DangKy.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
@@ -84,10 +84,10 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="HangHoa.cs">
+    <Compile Include="UI\HangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HangHoa.Designer.cs">
+    <Compile Include="UI\HangHoa.Designer.cs">
       <DependentUpon>HangHoa.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
@@ -96,10 +96,10 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhaCC.cs">
+    <Compile Include="UI\NhaCC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NhaCC.Designer.cs">
+    <Compile Include="UI\NhaCC.Designer.cs">
       <DependentUpon>NhaCC.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -135,19 +135,19 @@
     <Compile Include="UI\XuatHang.Designer.cs">
       <DependentUpon>XuatHang.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DangKy.resx">
+    <EmbeddedResource Include="UI\DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HangHoa.resx">
+    <EmbeddedResource Include="UI\HangHoa.resx">
       <DependentUpon>HangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhaCC.resx">
+    <EmbeddedResource Include="UI\NhaCC.resx">
       <DependentUpon>NhaCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

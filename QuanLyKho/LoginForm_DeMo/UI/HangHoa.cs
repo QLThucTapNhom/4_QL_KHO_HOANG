@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace LoginForm_DeMo
+namespace LoginForm_DeMo.UI
 {
     public partial class HangHoa : Form
     {

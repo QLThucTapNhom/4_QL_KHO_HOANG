@@ -35,9 +35,9 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -108,18 +108,17 @@
             this.panel1.Size = new System.Drawing.Size(763, 402);
             this.panel1.TabIndex = 62;
             // 
-            // label5
+            // label7
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label5.Location = new System.Drawing.Point(12, 62);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(473, 72);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "- Đây là một trong những phần mềm đầu tay của nhóm \r\nvề mặt hoàn thiện có thể chư" +
-    "a được đầy đủ cho lắm và\r\n nhóm đã cố gắng hết sức hoàn thiện.";
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label7.Location = new System.Drawing.Point(3, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(164, 29);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Quản lý kho .\r\n";
             // 
             // label6
             // 
@@ -133,17 +132,18 @@
             this.label6.TabIndex = 14;
             this.label6.Text = resources.GetString("label6.Text");
             // 
-            // label7
+            // label5
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label7.Location = new System.Drawing.Point(3, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(164, 29);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Quản lý kho .\r\n";
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label5.Location = new System.Drawing.Point(12, 62);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(473, 72);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "- Đây là một trong những phần mềm đầu tay của nhóm \r\nvề mặt hoàn thiện có thể chư" +
+    "a được đầy đủ cho lắm và\r\n nhóm đã cố gắng hết sức hoàn thiện.";
             // 
             // GioiThieu
             // 
@@ -154,6 +154,7 @@
             this.Controls.Add(this.panel6);
             this.Name = "GioiThieu";
             this.Text = "GioiThieu";
+            this.Load += new System.EventHandler(this.GioiThieu_Load);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel1.ResumeLayout(false);

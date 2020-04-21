@@ -84,44 +84,11 @@ D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft
 D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
 D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
 D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.MSXML.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
 D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csprojAssemblyReference.cache
 D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Login.resources
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.HangHoa.resources
 D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Menu.resources
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.NhaCC.resources
 D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.Properties.Resources.resources
 D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.NhapHang.resources
-D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.NhapHangReport.resources
 D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.TaiKhoan.resources
 D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.XuatHang.resources
 D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.GenerateResource.cache
@@ -378,3 +345,11 @@ D:\GIThub1008\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.c
 D:\GIThub1008\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.csproj.CopyComplete
 D:\GIThub1008\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.exe
 D:\GIThub1008\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.pdb
+D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.WebDesign.DLL
+D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\bin\Debug\EnvDTE80.dll
+D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.DangKy.resources
+D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.HangHoa.resources
+D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.NhaCC.resources
+D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.GioiThieu.resources
+D:\Hoc ky 6\tt nhóm\4_QL_KHO_HOANG\QuanLyKho\LoginForm_DeMo\obj\Debug\LoginForm_DeMo.UI.ThongKe.resources
