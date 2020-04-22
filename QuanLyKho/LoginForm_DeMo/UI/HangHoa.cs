@@ -22,7 +22,7 @@ namespace LoginForm_DeMo.UI
 
         private void HangHoa_Load(object sender, EventArgs e)
         {
-
+            database.loadComboBox(txttim, "select SanPhamID  from SanPham");
             database.LoadDataGridView(DanhMuc, "select * from dbo.SanPham");
             
 

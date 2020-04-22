@@ -56,9 +56,9 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(46, 12);
+            this.panel1.Location = new System.Drawing.Point(115, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(565, 136);
+            this.panel1.Size = new System.Drawing.Size(436, 136);
             this.panel1.TabIndex = 0;
             // 
             // label4
@@ -78,7 +78,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label3.Location = new System.Drawing.Point(367, 67);
+            this.label3.Location = new System.Drawing.Point(270, 79);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(170, 37);
             this.label3.TabIndex = 0;

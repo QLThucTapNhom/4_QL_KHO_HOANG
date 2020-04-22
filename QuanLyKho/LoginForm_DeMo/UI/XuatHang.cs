@@ -13,66 +13,10 @@ namespace LoginForm_DeMo.UI
 {
     public partial class XuatHang : Form
     {
-        //SqlConnection connection;
-        //SqlCommand command;
-        //string str = @"Data Source = WIN10PRO\SQLEXPRESS; Initial Catalog = QLKho; Integrated Security = True";
-        //SqlDataAdapter adapter = new SqlDataAdapter();
+        
 
         ConnectDatabase db = new ConnectDatabase();
        
-        //public void LoadHoaDon()
-        //{
-        //    DataTable table = new DataTable();
-        //    command = connection.CreateCommand();
-        //    command.CommandText = "select * from HoaDonXuat ";
-        //    adapter.SelectCommand = command;
-        //    table.Clear();
-        //    adapter.Fill(table);
-
-        //    //conn.Close();
-        //    LoadHD.DataSource = table;
-
-            
-        //}
-        //public void LoadTimHD()
-        //{
-        //    DataTable table = new DataTable();
-        //    command = connection.CreateCommand();
-        //    command.CommandText = "select * from HoaDonXuat where IdXuat  = N'" + txthdtim.Text + "' ";
-        //    adapter.SelectCommand = command;
-        //    table.Clear();
-        //    adapter.Fill(table);
-        //    LoadHD.DataSource = table;
-        //    //conn.Close();
-
-            
-        //}
-        //public void LoadChiTietHD()
-        //{
-        //    DataTable table = new DataTable();
-        //    command = connection.CreateCommand();
-        //    command.CommandText = "select * from XuatChiTiet ";
-        //    adapter.SelectCommand = command;
-        //    table.Clear();
-        //    adapter.Fill(table);
-
-        //    //conn.Close();
-        //    LoadCT.DataSource = table;
-
-            
-        //}
-        //public void LoadTimCTHD()
-        //{
-        //    DataTable table = new DataTable();
-        //    command = connection.CreateCommand();
-        //    command.CommandText = "select * from XuatChiTiet where IdXuat = N'" + txtcttim.Text + "' OR IdXuat = N'" + txthdid.Text + "' ";
-        //    adapter.SelectCommand = command;
-        //    table.Clear();
-        //    adapter.Fill(table);
-        //    LoadCT.DataSource = table;
-
-            
-        //}
         public XuatHang()
         {
             InitializeComponent();
@@ -80,11 +24,9 @@ namespace LoginForm_DeMo.UI
 
         private void XuatHang_Load(object sender, EventArgs e)
         {
-            //connection = new SqlConnection(str);
-            //connection.Open();
-            //LoadChiTietHD();
+            db.loadComboBox(txthdtim, "select IdXuat  from HoaDonXuat");
+            db.loadComboBox(txtcttim, "select IdXuat  from XuatChiTiet");
             db.LoadDataGridView(LoadCT, "select * from XuatChiTiet ");
-            //LoadHoaDon();
             db.LoadDataGridView(LoadHD, "select * from HoaDonXuat ");
         }
 

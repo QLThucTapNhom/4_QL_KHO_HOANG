@@ -31,6 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridViewNCC = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtSearch = new System.Windows.Forms.ComboBox();
             this.buttonTimKiem = new System.Windows.Forms.Button();
             this.dateTimePickerHHD = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,7 +39,6 @@
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.labelSDT = new System.Windows.Forms.Label();
             this.buttonLamMoi = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnxoa = new System.Windows.Forms.Button();
             this.btnsua = new System.Windows.Forms.Button();
             this.btnthem = new System.Windows.Forms.Button();
@@ -67,7 +67,7 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(5, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(752, 505);
+            this.panel1.Size = new System.Drawing.Size(769, 505);
             this.panel1.TabIndex = 1;
             // 
             // dataGridViewNCC
@@ -75,12 +75,13 @@
             this.dataGridViewNCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewNCC.Location = new System.Drawing.Point(1, 363);
             this.dataGridViewNCC.Name = "dataGridViewNCC";
-            this.dataGridViewNCC.Size = new System.Drawing.Size(750, 142);
+            this.dataGridViewNCC.Size = new System.Drawing.Size(765, 142);
             this.dataGridViewNCC.TabIndex = 67;
             this.dataGridViewNCC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewNCC_CellContentClick);
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.txtSearch);
             this.panel2.Controls.Add(this.buttonTimKiem);
             this.panel2.Controls.Add(this.dateTimePickerHHD);
             this.panel2.Controls.Add(this.label2);
@@ -88,7 +89,6 @@
             this.panel2.Controls.Add(this.txtSDT);
             this.panel2.Controls.Add(this.labelSDT);
             this.panel2.Controls.Add(this.buttonLamMoi);
-            this.panel2.Controls.Add(this.txtSearch);
             this.panel2.Controls.Add(this.btnxoa);
             this.panel2.Controls.Add(this.btnsua);
             this.panel2.Controls.Add(this.btnthem);
@@ -103,8 +103,16 @@
             this.panel2.Controls.Add(this.txtmaNCC);
             this.panel2.Location = new System.Drawing.Point(1, 99);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(750, 258);
+            this.panel2.Size = new System.Drawing.Size(765, 258);
             this.panel2.TabIndex = 66;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.FormattingEnabled = true;
+            this.txtSearch.Location = new System.Drawing.Point(575, 175);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(138, 21);
+            this.txtSearch.TabIndex = 101;
             // 
             // buttonTimKiem
             // 
@@ -173,14 +181,6 @@
             this.buttonLamMoi.Text = "Mới";
             this.buttonLamMoi.UseVisualStyleBackColor = false;
             this.buttonLamMoi.Click += new System.EventHandler(this.buttonLamMoi_Click);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(381, 163);
-            this.txtSearch.Multiline = true;
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(305, 26);
-            this.txtSearch.TabIndex = 93;
             // 
             // btnxoa
             // 
@@ -306,7 +306,7 @@
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(1, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(750, 93);
+            this.panel3.Size = new System.Drawing.Size(765, 93);
             this.panel3.TabIndex = 65;
             // 
             // label1
@@ -323,7 +323,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 513);
+            this.ClientSize = new System.Drawing.Size(774, 513);
             this.Controls.Add(this.panel1);
             this.Name = "NhaCC";
             this.Text = "NhaCC";
@@ -352,7 +352,6 @@
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.Label labelSDT;
         private System.Windows.Forms.Button buttonLamMoi;
-        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnxoa;
         private System.Windows.Forms.Button btnsua;
         private System.Windows.Forms.Button btnthem;
@@ -365,5 +364,6 @@
         private System.Windows.Forms.Label txtdonGia;
         private System.Windows.Forms.Label txtngayLap;
         private System.Windows.Forms.Label txtmaNCC;
+        private System.Windows.Forms.ComboBox txtSearch;
     }
 }

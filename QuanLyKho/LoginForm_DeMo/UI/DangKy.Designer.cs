@@ -53,9 +53,9 @@
             this.panel1.BackgroundImage = global::LoginForm_DeMo.Properties.Resources.Tổng_hợp_những_hình_ảnh_Icon_đáng_yêu_cute_nhất_48;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(46, 12);
+            this.panel1.Location = new System.Drawing.Point(110, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(565, 130);
+            this.panel1.Size = new System.Drawing.Size(439, 130);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 

@@ -67,6 +67,17 @@ namespace LoginForm_DeMo
             }
             Disconnect();
         }
+        public void loadComboBox(ComboBox cb, string strselect)
+        {
+            Connect();
+            command = new SqlCommand(strselect, connection);
+            reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                cb.Items.Add(reader[0].ToString());
+            }
+            Disconnect();
+        }
         //Kiểm tra dữ liệu đã tồn tại trong database hay chưa
         public bool Check(string temp, string strsql)
         {

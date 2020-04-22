@@ -56,12 +56,13 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(2, -6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(932, 622);
+            this.panel1.Size = new System.Drawing.Size(946, 622);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel4
             // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.button9);
             this.panel4.Controls.Add(this.button8);
             this.panel4.Controls.Add(this.button6);
@@ -71,7 +72,7 @@
             this.panel4.Controls.Add(this.button1);
             this.panel4.Location = new System.Drawing.Point(3, 96);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(136, 552);
+            this.panel4.Size = new System.Drawing.Size(141, 552);
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -183,7 +184,7 @@
             // panelControl
             // 
             this.panelControl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelControl.Location = new System.Drawing.Point(142, 96);
+            this.panelControl.Location = new System.Drawing.Point(151, 98);
             this.panelControl.Name = "panelControl";
             this.panelControl.Size = new System.Drawing.Size(787, 516);
             this.panelControl.TabIndex = 4;
@@ -200,7 +201,7 @@
             this.panel3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(926, 87);
+            this.panel3.Size = new System.Drawing.Size(940, 87);
             this.panel3.TabIndex = 3;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -242,7 +243,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 618);
+            this.ClientSize = new System.Drawing.Size(951, 618);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

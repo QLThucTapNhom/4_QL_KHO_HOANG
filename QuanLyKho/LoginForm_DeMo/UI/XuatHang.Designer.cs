@@ -30,10 +30,10 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.txthdtim = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,6 +52,7 @@
             this.buttonhdxoa = new System.Windows.Forms.Button();
             this.buttonhdsua = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button9 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.txtctid = new System.Windows.Forms.TextBox();
@@ -62,7 +63,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtctsp = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.txtcttim = new System.Windows.Forms.TextBox();
             this.btnTimCT = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
@@ -76,8 +76,8 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.LoadCT = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.txthdtim = new System.Windows.Forms.ComboBox();
+            this.txtcttim = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -127,6 +127,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Hóa Đơn";
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Lime;
+            this.button8.Location = new System.Drawing.Point(268, 19);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(70, 30);
+            this.button8.TabIndex = 56;
+            this.button8.Text = "Reset";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
+            // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -157,13 +168,6 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(256, 35);
             this.panel13.TabIndex = 52;
-            // 
-            // txthdtim
-            // 
-            this.txthdtim.Location = new System.Drawing.Point(42, 9);
-            this.txthdtim.Name = "txthdtim";
-            this.txthdtim.Size = new System.Drawing.Size(81, 20);
-            this.txthdtim.TabIndex = 43;
             // 
             // button5
             // 
@@ -341,6 +345,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chi Tiết Hóa Đơn";
             // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Lime;
+            this.button9.Location = new System.Drawing.Point(253, 15);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(70, 30);
+            this.button9.TabIndex = 57;
+            this.button9.Text = "Reset";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.label6);
@@ -431,13 +446,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(235, 35);
             this.panel6.TabIndex = 45;
-            // 
-            // txtcttim
-            // 
-            this.txtcttim.Location = new System.Drawing.Point(47, 7);
-            this.txtcttim.Name = "txtcttim";
-            this.txtcttim.Size = new System.Drawing.Size(86, 20);
-            this.txtcttim.TabIndex = 43;
             // 
             // btnTimCT
             // 
@@ -559,27 +567,21 @@
             this.label7.TabIndex = 48;
             this.label7.Text = "Xuất Hàng";
             // 
-            // button8
+            // txthdtim
             // 
-            this.button8.BackColor = System.Drawing.Color.Lime;
-            this.button8.Location = new System.Drawing.Point(268, 19);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(70, 30);
-            this.button8.TabIndex = 56;
-            this.button8.Text = "Reset";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click_1);
+            this.txthdtim.FormattingEnabled = true;
+            this.txthdtim.Location = new System.Drawing.Point(15, 9);
+            this.txthdtim.Name = "txthdtim";
+            this.txthdtim.Size = new System.Drawing.Size(121, 21);
+            this.txthdtim.TabIndex = 31;
             // 
-            // button9
+            // txtcttim
             // 
-            this.button9.BackColor = System.Drawing.Color.Lime;
-            this.button9.Location = new System.Drawing.Point(253, 15);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(70, 30);
-            this.button9.TabIndex = 57;
-            this.button9.Text = "Reset";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.txtcttim.FormattingEnabled = true;
+            this.txtcttim.Location = new System.Drawing.Point(12, 7);
+            this.txtcttim.Name = "txtcttim";
+            this.txtcttim.Size = new System.Drawing.Size(121, 21);
+            this.txtcttim.TabIndex = 31;
             // 
             // XuatHang
             // 
@@ -598,7 +600,6 @@
             this.Load += new System.EventHandler(this.XuatHang_Load);
             this.groupBox2.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
@@ -613,7 +614,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -633,7 +633,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.TextBox txthdtim;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label1;
@@ -655,7 +654,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox txtcttim;
         private System.Windows.Forms.Button btnTimCT;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label11;
@@ -678,5 +676,7 @@
         private System.Windows.Forms.Button btnXoaCT;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.ComboBox txthdtim;
+        private System.Windows.Forms.ComboBox txtcttim;
     }
 }

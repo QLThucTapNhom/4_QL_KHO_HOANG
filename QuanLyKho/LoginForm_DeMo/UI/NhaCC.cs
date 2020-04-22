@@ -20,6 +20,7 @@ namespace LoginForm_DeMo.UI
 
         private void NhaCC_Load(object sender, EventArgs e)
         {
+            database.loadComboBox(txtSearch, "select NhaCungCapID  from NhaCungCap");
             database.LoadDataGridView(dataGridViewNCC, "SELECT * FROM dbo.NhaCungCap");
         }
 
@@ -134,9 +135,16 @@ namespace LoginForm_DeMo.UI
 
         private void buttonTimKiem_Click(object sender, EventArgs e)
         {
-            string search = "select * from NhaCungCap where NhaCungCapID LIKE '%" + txtSearch.Text + "%' OR TenNhaCungCap LIKE N'%" + txtSearch.Text + "%' OR SoDienThoai LIKE '%" + txtSearch.Text + "%'";
-            database.SQLConnection(search);
-            database.LoadDataGridView(dataGridViewNCC, search);
+            if (txtSearch.Text=="")
+            {
+                MessageBox.Show("chưa nhập thông tin cần tìm");
+            }
+            else
+            {
+                string search = "select * from NhaCungCap where NhaCungCapID LIKE '%" + txtSearch.Text + "%' OR TenNhaCungCap LIKE N'%" + txtSearch.Text + "%' OR SoDienThoai LIKE '%" + txtSearch.Text + "%'";
+                database.SQLConnection(search);
+                database.LoadDataGridView(dataGridViewNCC, search);
+            }
         }
 
         private void dataGridViewNCC_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -150,6 +158,11 @@ namespace LoginForm_DeMo.UI
             txt_email.Text = dataGridViewNCC.Rows[a].Cells[4].Value.ToString();
             txtTTT.Text = dataGridViewNCC.Rows[a].Cells[5].Value.ToString();
             dateTimePickerHHD.Text = dataGridViewNCC.Rows[a].Cells[6].Value.ToString();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

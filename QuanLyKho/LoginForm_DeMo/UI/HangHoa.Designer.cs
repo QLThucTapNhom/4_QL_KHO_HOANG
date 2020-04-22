@@ -32,9 +32,9 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.DanhMuc = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txttim = new System.Windows.Forms.ComboBox();
             this.buttonAll = new System.Windows.Forms.Button();
             this.buttonReset = new System.Windows.Forms.Button();
-            this.txttim = new System.Windows.Forms.TextBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.txtncc = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -117,7 +117,7 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(3, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(758, 523);
+            this.panel1.Size = new System.Drawing.Size(773, 523);
             this.panel1.TabIndex = 1;
             // 
             // panel4
@@ -128,7 +128,7 @@
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Location = new System.Drawing.Point(-4, 1);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(760, 522);
+            this.panel4.Size = new System.Drawing.Size(774, 522);
             this.panel4.TabIndex = 68;
             // 
             // DanhMuc
@@ -136,15 +136,15 @@
             this.DanhMuc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DanhMuc.Location = new System.Drawing.Point(5, 319);
             this.DanhMuc.Name = "DanhMuc";
-            this.DanhMuc.Size = new System.Drawing.Size(756, 200);
+            this.DanhMuc.Size = new System.Drawing.Size(766, 200);
             this.DanhMuc.TabIndex = 62;
             this.DanhMuc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DanhMuc_CellContentClick);
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.txttim);
             this.panel5.Controls.Add(this.buttonAll);
             this.panel5.Controls.Add(this.buttonReset);
-            this.panel5.Controls.Add(this.txttim);
             this.panel5.Controls.Add(this.panel12);
             this.panel5.Controls.Add(this.panel14);
             this.panel5.Controls.Add(this.panel15);
@@ -161,9 +161,17 @@
             this.panel5.Controls.Add(this.button3);
             this.panel5.Location = new System.Drawing.Point(3, 74);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(758, 239);
+            this.panel5.Size = new System.Drawing.Size(768, 239);
             this.panel5.TabIndex = 61;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // txttim
+            // 
+            this.txttim.FormattingEnabled = true;
+            this.txttim.Location = new System.Drawing.Point(605, 51);
+            this.txttim.Name = "txttim";
+            this.txttim.Size = new System.Drawing.Size(120, 21);
+            this.txttim.TabIndex = 86;
             // 
             // buttonAll
             // 
@@ -186,14 +194,6 @@
             this.buttonReset.Text = "Reset";
             this.buttonReset.UseVisualStyleBackColor = false;
             this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
-            // 
-            // txttim
-            // 
-            this.txttim.Location = new System.Drawing.Point(605, 45);
-            this.txttim.Multiline = true;
-            this.txttim.Name = "txttim";
-            this.txttim.Size = new System.Drawing.Size(152, 25);
-            this.txttim.TabIndex = 2;
             // 
             // panel12
             // 
@@ -521,7 +521,7 @@
             this.panel6.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(760, 68);
+            this.panel6.Size = new System.Drawing.Size(774, 68);
             this.panel6.TabIndex = 60;
             // 
             // label4
@@ -707,7 +707,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 524);
+            this.ClientSize = new System.Drawing.Size(775, 524);
             this.Controls.Add(this.panel1);
             this.Name = "HangHoa";
             this.Text = "HangHoa";
@@ -716,7 +716,6 @@
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DanhMuc)).EndInit();
             this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel14.ResumeLayout(false);
@@ -779,7 +778,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button buttonAll;
         private System.Windows.Forms.Button buttonReset;
-        private System.Windows.Forms.TextBox txttim;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.TextBox txtncc;
         private System.Windows.Forms.Label label8;
@@ -810,5 +808,6 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox txttim;
     }
 }

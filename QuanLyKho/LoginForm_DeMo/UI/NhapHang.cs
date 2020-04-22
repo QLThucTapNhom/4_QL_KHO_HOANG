@@ -13,62 +13,12 @@ namespace LoginForm_DeMo.UI
 {
     public partial class NhapHang : Form
     {
-        //SqlConnection connection;
-        //SqlCommand command;
-        //string str = @"Data Source = WIN10PRO\SQLEXPRESS; Initial Catalog = QLKho; Integrated Security = True";
-        //SqlDataAdapter adapter = new SqlDataAdapter();
+        
 
 
         ConnectDatabase database = new ConnectDatabase();
 
-        //public void LoadHoaDon()
-        //{
-        //    DataTable table = new DataTable();
-        //    command = connection.CreateCommand();
-        //    command.CommandText = "select * from HoaDonNhap  ";
-        //    adapter.SelectCommand = command;
-        //    table.Clear();
-        //    adapter.Fill(table);
-
-        //    //conn.Close();
-        //    LoadHD.DataSource = table;
-        //}
-        //public void LoadTimHD()
-        //{
-        //    DataTable table = new DataTable();
-        //    command = connection.CreateCommand();
-        //    command.CommandText = "select * from HoaDonNhap  where IdNhap   = N'" + txthdtim.Text + "' ";
-        //    adapter.SelectCommand = command;
-        //    table.Clear();
-        //    adapter.Fill(table);
-        //    LoadHD.DataSource = table;
-        //    //conn.Close();
-        //}
-        //public void LoadChiTietHD()
-        //{
-        //    DataTable table = new DataTable();
-        //    command = connection.CreateCommand();
-        //    command.CommandText = "select * from NhapChiTiet ";
-        //    adapter.SelectCommand = command;
-        //    table.Clear();
-        //    adapter.Fill(table);
-
-        //    //conn.Close();
-        //    LoadCT.DataSource = table;
-            
-        //}
-        //public void LoadTimCTHD()
-        //{
-        //    DataTable table = new DataTable();
-        //    command = connection.CreateCommand();
-        //    command.CommandText = "select * from NhapChiTiet where IdNhap = N'" + txtcttim.Text + "' OR IdNhap = N'" + txthdid.Text + "' ";
-        //    adapter.SelectCommand = command;
-        //    table.Clear();
-        //    adapter.Fill(table);
-        //    LoadCT.DataSource = table;
-            
-            
-        //}
+        
         public NhapHang()
         {
             InitializeComponent();
@@ -76,18 +26,15 @@ namespace LoginForm_DeMo.UI
 
         private void NhapHang_Load(object sender, EventArgs e)
         {
-            //connection = new SqlConnection(str);
-            //connection.Open();
-            //LoadChiTietHD();
+            database.loadComboBox(txtcttim, "select IdNhap from   NhapChiTiet");
+            database.loadComboBox(txthdtim, "select IdNhap  from HoaDonNhap");
             database.LoadDataGridView(LoadCT, "select * from NhapChiTiet ");
-            //LoadHoaDon();
             database.LoadDataGridView(LoadHD, "select * from HoaDonNhap");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             database.LoadDataGridView(LoadHD, "select * from HoaDonNhap ");
-            //LoadHoaDon();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -104,7 +51,6 @@ namespace LoginForm_DeMo.UI
             else
             {
                 database.LoadDataGridView(LoadHD, "select * from HoaDonNhap  where IdNhap   = N'" + txthdtim.Text + "' ");
-                //LoadTimHD();
             }
         }
 
