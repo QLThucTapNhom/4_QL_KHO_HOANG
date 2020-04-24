@@ -87,8 +87,8 @@ create table XuatChiTiet
 go
 
 CREATE TABLE TaiKhoan(
-	[acc] char(15) primary key,
-	[pass] char(15) null,
+	acc char(15) primary key,
+	pass char(15) null,
 	NhanVienID nvarchar(50) foreign key references NhanVien(NhanVienID),
 
 )
@@ -100,16 +100,18 @@ insert into NhanVien values(N'NV03',N'Đặng Quốc Khánh','1999-07-07',1,N'Ti
 insert into NhanVien values(N'NV04',N'Lê Văn Hoàng','1999-03-03',1,N'Bảo Vệ',N'Hà Nội','NhanVien4@gmail.com','012345679',3000000)
 insert into NhanVien values(N'NV05',N'Lê Văn Luyện','1999-12-07',1,N'Tiếp Thị',N'Hà Nội','NhanVien5@gmail.com','012345679',3000000)
 
-INSERT [dbo].[TaiKhoan]  VALUES (N'admin', N'1',N'NV01')
-INSERT [dbo].[TaiKhoan]  VALUES (N'admin1', N'123',N'NV02')
-INSERT [dbo].[TaiKhoan] VALUES (N'admin2', N'123',N'NV03')
-INSERT [dbo].[TaiKhoan]  VALUES (N'admin3', N'123',N'NV04')
+INSERT TaiKhoan  VALUES (N'admin', N'1',N'NV01')
+INSERT TaiKhoan  VALUES (N'admin1', N'123',N'NV02')
+INSERT TaiKhoan VALUES (N'admin2', N'123',N'NV03')
+INSERT TaiKhoan  VALUES (N'admin3', N'123',N'NV04')
+INSERT TaiKhoan  VALUES (N'admin4', N'123',N'NV01')
 
-INSERT [dbo].[NhaCungCap]  VALUES (N'001', N'Nhà cung cấp 1', N'Cầu Giấy-HN', N'01681796124  ', N'NCC1@gmail.com',null,N'2019-01-01')
-INSERT [dbo].[NhaCungCap]  VALUES (N'002', N'Nhà cung cấp 2', N'Nhổn-HN', N'01668546124  ', N'NCC2@gmail.com',null,N'2019-02-01')
-INSERT [dbo].[NhaCungCap]  VALUES (N'003', N'Nhà xuất bản 3', N'Xuân Thủy-HN', N'01689896124  ', N'NCC3@gmail.com',null,N'2020-03-01')
-INSERT [dbo].[NhaCungCap] VALUES (N'004', N'Nhà xuất bản 4', N'Phạm Quang-HN', N'01674156129  ', N'NCC4@gmail.com',null,N'2020-05-01')
-INSERT [dbo].[NhaCungCap] VALUES (N'005', N'Nhà xuất bản 5', N'Phạm Hùng-HN', N'01674156124  ', N'NCC5@gmail.com',null,N'2020-04-01')
+
+INSERT NhaCungCap  VALUES (N'001', N'Nhà cung cấp 1', N'Cầu Giấy-HN', N'01681796124  ', N'NCC1@gmail.com',null,N'2019-01-01')
+INSERT NhaCungCap  VALUES (N'002', N'Nhà cung cấp 2', N'Nhổn-HN', N'01668546124  ', N'NCC2@gmail.com',null,N'2019-02-01')
+INSERT NhaCungCap  VALUES (N'003', N'Nhà xuất bản 3', N'Xuân Thủy-HN', N'01689896124  ', N'NCC3@gmail.com',null,N'2020-03-01')
+INSERT NhaCungCap VALUES (N'004', N'Nhà xuất bản 4', N'Phạm Quang-HN', N'01674156129  ', N'NCC4@gmail.com',null,N'2020-05-01')
+INSERT NhaCungCap VALUES (N'005', N'Nhà xuất bản 5', N'Phạm Hùng-HN', N'01674156124  ', N'NCC5@gmail.com',null,N'2020-04-01')
 
 
 insert into SanPham values(N'001',N'001',N'IPhone 11','Nokia','ChiNa','Đen',50,11000000,'2018-12-12',N'12 tháng')
@@ -118,27 +120,27 @@ insert into SanPham values(N'003',N'003',N'IPhone 16','Nokia','ChiNa','Trắng',
 insert into SanPham values(N'004',N'004',N'IPhone 15','Nokia','ChiNa','Đen',50,5000000,'2017-12-12',N'12 tháng')
 insert into SanPham values(N'005',N'005',N'ViVoy15','ViVo','ChiNa','Xanh',50,7500000,'2019-09-12',N'12 tháng')
 
-INSERT [dbo].[HoaDonNhap]  VALUES (N'001',N'NV01', N'2020-01-01',110000000 )
-INSERT [dbo].[HoaDonNhap]  VALUES (N'002',N'NV02', N'2016-02-02', 9000000)
-INSERT [dbo].[HoaDonNhap]  VALUES (N'003',N'NV03', N'2016-01-02', 60000000)
-INSERT [dbo].[HoaDonNhap]  VALUES (N'004',N'NV04', N'2015-04-04',5000000)
-INSERT [dbo].[HoaDonNhap]  VALUES (N'005',N'NV05', N'2010-04-04', 7500000)
+INSERT HoaDonNhap  VALUES (N'001',N'NV01', N'2020-01-01',110000000 )
+INSERT HoaDonNhap  VALUES (N'002',N'NV02', N'2016-02-02', 9000000)
+INSERT HoaDonNhap  VALUES (N'003',N'NV03', N'2016-01-02', 60000000)
+INSERT HoaDonNhap  VALUES (N'004',N'NV04', N'2015-04-04',5000000)
+INSERT HoaDonNhap  VALUES (N'005',N'NV05', N'2010-04-04', 7500000)
 
-INSERT [dbo].[NhapChiTiet]  VALUES (N'001', N'001', 10,  110000000)
-INSERT [dbo].[NhapChiTiet]  VALUES (N'002', N'002', 1, 9000000)
-INSERT [dbo].[NhapChiTiet]  VALUES (N'003', N'003', 10, 6000000)
-INSERT [dbo].[NhapChiTiet]  VALUES (N'004', N'004',1, 5000000)
-INSERT [dbo].[NhapChiTiet]  VALUES (N'005', N'005', 1, 7500000)
+INSERT NhapChiTiet  VALUES (N'001', N'001', 10,  110000000)
+INSERT NhapChiTiet  VALUES (N'002', N'002', 1, 9000000)
+INSERT NhapChiTiet  VALUES (N'003', N'003', 10, 6000000)
+INSERT NhapChiTiet  VALUES (N'004', N'004',1, 5000000)
+INSERT NhapChiTiet  VALUES (N'005', N'005', 1, 7500000)
 
 
-INSERT [dbo].[HoaDonXuat]  VALUES (N'001',N'NV05', N'2020-01-01',11000000 )
-INSERT [dbo].[HoaDonXuat]  VALUES (N'002',N'NV04', N'2016-02-02', 90000000)
-INSERT [dbo].[HoaDonXuat]  VALUES (N'003',N'NV03', N'2016-01-02', 60000000)
-INSERT [dbo].[HoaDonXuat]  VALUES (N'004',N'NV02', N'2015-04-04',5000000)
-INSERT [dbo].[HoaDonXuat]  VALUES (N'005',N'NV01', N'2010-04-04', 7500000)
+INSERT HoaDonXuat  VALUES (N'001',N'NV05', N'2020-01-01',11000000 )
+INSERT HoaDonXuat  VALUES (N'002',N'NV04', N'2016-02-02', 90000000)
+INSERT HoaDonXuat  VALUES (N'003',N'NV03', N'2016-01-02', 60000000)
+INSERT HoaDonXuat  VALUES (N'004',N'NV02', N'2015-04-04',5000000)
+INSERT HoaDonXuat  VALUES (N'005',N'NV01', N'2010-04-04', 7500000)
 
-INSERT [dbo].[XuatChiTiet]  VALUES (N'001', N'001', 1,  11000000)
-INSERT [dbo].[XuatChiTiet]  VALUES (N'002', N'002', 10, 9000000)
-INSERT [dbo].[XuatChiTiet]  VALUES (N'003', N'003', 10, 6000000)
-INSERT [dbo].[XuatChiTiet]  VALUES (N'004', N'004',1, 5000000)
-INSERT [dbo].[XuatChiTiet]  VALUES (N'005', N'005', 1, 7500000)
+INSERT XuatChiTiet  VALUES (N'001', N'001', 1,  11000000)
+INSERT XuatChiTiet  VALUES (N'002', N'002', 10, 9000000)
+INSERT XuatChiTiet  VALUES (N'003', N'003', 10, 6000000)
+INSERT XuatChiTiet  VALUES (N'004', N'004',1, 5000000)
+INSERT XuatChiTiet  VALUES (N'005', N'005', 1, 7500000)
