@@ -59,6 +59,14 @@ namespace LoginForm_DeMo.UI
             //gioi tinh
             string str4 = "SELECT nv.GioiTinh FROM TaiKhoan tk, NhanVien nv WHERE tk.NhanVienID = nv.NhanVienID and tk.acc = '" + _tenTK + "'";
             data.loadTextBox(txtGT, str4);
+            if (txtGT.Text == "True")
+            {
+                txtGT.Text = "Nam";
+            }
+            if(txtGT.Text=="False")
+            {
+                txtGT.Text = "Nữ";
+            }
             //chuc vu
             string str5 = "SELECT nv.ChucVu FROM TaiKhoan tk, NhanVien nv WHERE tk.NhanVienID = nv.NhanVienID and tk.acc = '" + _tenTK + "'";
             data.loadTextBox(txtChucVu, str5);
