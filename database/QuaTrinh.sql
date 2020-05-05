@@ -21,7 +21,7 @@ create Trigger Delete_Xuat on HoaDonXuat instead of Delete
 	end
 	
 
-	Drop trigger Delete_HD
+	Drop trigger Delete_Xuat
 
 	delete HoaDonXuat where IdXuat=N'006' /*Xóa Hóa Đơn*/
 
@@ -68,7 +68,7 @@ create Trigger Delete_Xuat on HoaDonXuat instead of Delete
 
 
 	
-		alter trigger Insert_CTHoaDon on XuatChiTiet instead of Insert
+		create trigger Insert_CTHoaDon on XuatChiTiet instead of Insert
 	as
 	declare @soluong int,@masp char(10),@soluongton int,@mahd char(10),@Tongtien float
 	begin
@@ -227,32 +227,15 @@ create Trigger Delete_Nhap on HoaDonNhap instead of Delete
 
 
 	/*Thêm Hóa Đơn*/
-	insert into HoaDonNhap(IdNhap,NgayHD,NhanVienID)
-	values(N'007','2020/02/10',N'NV01')
+	insert into HoaDonNhap(IdNhap,NhaCungCapID,NgayHD,NhanVienID)
+	values(N'007',N'001','2020/02/10',N'NV01')
 	insert into NhapChiTiet (IdNhap,SanPhamID,SoLuong)
 	values (N'007',N'002',11)
 
 	drop trigger Insert_CTHoaDonNhap/*Xóa Trigger */
 
 
-	----------------------------------
-	/*Tạo Report Xuất Hóa Don*/
-
-	
-
-	create proc XuatHoadon (@MaHD nvarchar(128) )
-	as
-	begin
-	select KhachHang.TenKhachHang,KhachHang.DiaChi,KhachHang.SoDienThoai,SanPham.TenSanPham,SanPham.ThoiGianBaoHanh,HoaDonXuat.IdXuat,HoaDonXuat.NgayHD,HoaDonXuat.Tong,
-	XuatChiTiet.DonGia,XuatChiTiet.SoLuong
-	from HoaDonXuat,XuatChiTiet,SanPham,KhachHang
-	where HoaDonXuat.IdXuat=XuatChiTiet.IdXuat and SanPham.SanPhamID=XuatChiTiet.SanPhamID and KhachHang.KhachHangID= HoaDonXuat.KhachHangID and HoaDonXuat.IdXuat=@MaHD
-	
-	end
-
-	exec XuatHoadon N'001'
-	--drop procedure xuatHoadon
-
+	---------------------------------
 --proc xoa NCC
 CREATE PROC DEL_NCC @MaNCC NCHAR(20) AS
 BEGIN

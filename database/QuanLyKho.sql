@@ -52,6 +52,7 @@ create table HoaDonNhap
 (
    IdNhap nvarchar(128) primary key,
    	NhanVienID nvarchar(50) foreign key references NhanVien(NhanVienID),
+	NhaCungCapID nvarchar(50) foreign key references NhaCungCap(NhaCungCapID),
    NgayHD Date,
    Tong int ,
 
@@ -120,11 +121,11 @@ insert into SanPham values(N'003',N'003',N'IPhone 16','Nokia','ChiNa','Trắng',
 insert into SanPham values(N'004',N'004',N'IPhone 15','Nokia','ChiNa','Đen',50,5000000,'2017-12-12',N'12 tháng')
 insert into SanPham values(N'005',N'005',N'ViVoy15','ViVo','ChiNa','Xanh',50,7500000,'2019-09-12',N'12 tháng')
 
-INSERT HoaDonNhap  VALUES (N'001',N'NV01', N'2020-01-01',110000000 )
-INSERT HoaDonNhap  VALUES (N'002',N'NV02', N'2016-02-02', 9000000)
-INSERT HoaDonNhap  VALUES (N'003',N'NV03', N'2016-01-02', 60000000)
-INSERT HoaDonNhap  VALUES (N'004',N'NV04', N'2015-04-04',5000000)
-INSERT HoaDonNhap  VALUES (N'005',N'NV05', N'2010-04-04', 7500000)
+INSERT HoaDonNhap  VALUES (N'001',N'NV01',N'001', N'2020-01-01',110000000 )
+INSERT HoaDonNhap  VALUES (N'002',N'NV02',N'002', N'2016-02-02', 9000000)
+INSERT HoaDonNhap  VALUES (N'003',N'NV03',N'003', N'2016-01-02', 60000000)
+INSERT HoaDonNhap  VALUES (N'004',N'NV04',N'004', N'2015-04-04',5000000)
+INSERT HoaDonNhap  VALUES (N'005',N'NV05',N'005', N'2010-04-04', 7500000)
 
 INSERT NhapChiTiet  VALUES (N'001', N'001', 10,  110000000)
 INSERT NhapChiTiet  VALUES (N'002', N'002', 1, 9000000)

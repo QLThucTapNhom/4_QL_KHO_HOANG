@@ -38,6 +38,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.txtcttim = new System.Windows.Forms.ComboBox();
             this.btnTimCT = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
@@ -58,6 +59,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.txthdtim = new System.Windows.Forms.ComboBox();
             this.button5 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -75,8 +77,9 @@
             this.button4 = new System.Windows.Forms.Button();
             this.buttonhdxoa = new System.Windows.Forms.Button();
             this.buttonhdsua = new System.Windows.Forms.Button();
-            this.txthdtim = new System.Windows.Forms.ComboBox();
-            this.txtcttim = new System.Windows.Forms.ComboBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtncc = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoadCT)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -93,6 +96,7 @@
             this.panel9.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // label7
@@ -203,6 +207,14 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(235, 35);
             this.panel6.TabIndex = 45;
+            // 
+            // txtcttim
+            // 
+            this.txtcttim.FormattingEnabled = true;
+            this.txtcttim.Location = new System.Drawing.Point(6, 7);
+            this.txtcttim.Name = "txtcttim";
+            this.txtcttim.Size = new System.Drawing.Size(121, 21);
+            this.txtcttim.TabIndex = 31;
             // 
             // btnTimCT
             // 
@@ -339,6 +351,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.panel5);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.button7);
             this.groupBox2.Controls.Add(this.button2);
@@ -395,10 +408,18 @@
             // 
             this.panel13.Controls.Add(this.txthdtim);
             this.panel13.Controls.Add(this.button5);
-            this.panel13.Location = new System.Drawing.Point(6, 225);
+            this.panel13.Location = new System.Drawing.Point(6, 230);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(256, 35);
             this.panel13.TabIndex = 52;
+            // 
+            // txthdtim
+            // 
+            this.txthdtim.FormattingEnabled = true;
+            this.txthdtim.Location = new System.Drawing.Point(15, 7);
+            this.txthdtim.Name = "txthdtim";
+            this.txthdtim.Size = new System.Drawing.Size(121, 21);
+            this.txthdtim.TabIndex = 44;
             // 
             // button5
             // 
@@ -415,7 +436,7 @@
             // 
             this.panel8.Controls.Add(this.label1);
             this.panel8.Controls.Add(this.txthdtien);
-            this.panel8.Location = new System.Drawing.Point(6, 174);
+            this.panel8.Location = new System.Drawing.Point(6, 187);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(256, 35);
             this.panel8.TabIndex = 48;
@@ -440,7 +461,7 @@
             // 
             this.panel9.Controls.Add(this.label2);
             this.panel9.Controls.Add(this.txthdnv);
-            this.panel9.Location = new System.Drawing.Point(6, 74);
+            this.panel9.Location = new System.Drawing.Point(6, 61);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(256, 35);
             this.panel9.TabIndex = 49;
@@ -465,7 +486,7 @@
             // 
             this.panel11.Controls.Add(this.txthddate);
             this.panel11.Controls.Add(this.label4);
-            this.panel11.Location = new System.Drawing.Point(6, 119);
+            this.panel11.Location = new System.Drawing.Point(6, 143);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(256, 35);
             this.panel11.TabIndex = 51;
@@ -555,21 +576,30 @@
             this.buttonhdsua.UseVisualStyleBackColor = false;
             this.buttonhdsua.Click += new System.EventHandler(this.buttonhdsua_Click);
             // 
-            // txthdtim
+            // panel5
             // 
-            this.txthdtim.FormattingEnabled = true;
-            this.txthdtim.Location = new System.Drawing.Point(15, 7);
-            this.txthdtim.Name = "txthdtim";
-            this.txthdtim.Size = new System.Drawing.Size(121, 21);
-            this.txthdtim.TabIndex = 44;
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.txtncc);
+            this.panel5.Location = new System.Drawing.Point(6, 102);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(256, 35);
+            this.panel5.TabIndex = 51;
             // 
-            // txtcttim
+            // label3
             // 
-            this.txtcttim.FormattingEnabled = true;
-            this.txtcttim.Location = new System.Drawing.Point(6, 7);
-            this.txtcttim.Name = "txtcttim";
-            this.txtcttim.Size = new System.Drawing.Size(121, 21);
-            this.txtcttim.TabIndex = 31;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 13);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Mã nhà CC";
+            // 
+            // txtncc
+            // 
+            this.txtncc.Location = new System.Drawing.Point(109, 10);
+            this.txtncc.Name = "txtncc";
+            this.txtncc.Size = new System.Drawing.Size(124, 20);
+            this.txtncc.TabIndex = 43;
             // 
             // NhapHang
             // 
@@ -609,6 +639,8 @@
             this.panel11.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -665,5 +697,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox txthdtim;
         private System.Windows.Forms.ComboBox txtcttim;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtncc;
     }
 }

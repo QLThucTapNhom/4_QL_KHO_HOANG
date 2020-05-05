@@ -197,11 +197,15 @@ namespace LoginForm_DeMo.UI
         private void button7_Click(object sender, EventArgs e)
         {
             string HdId = txthdid.Text.Trim();
+            string ncc = txtncc.Text.Trim();
             bool checkhd = database.Check(HdId, "select IdNhap from HoaDonNhap");
-
+            bool checkncc = database.Check(ncc, "select NhaCungCapID from NhaCungCap");
+            
 
             if (checkhd == false)
             {
+              if(checkncc==true)
+                {    
                 if (txtctid.Text == "")
                 {
                     MessageBox.Show("Chưa Có Hóa Đơn Cần Thêm");
@@ -215,7 +219,7 @@ namespace LoginForm_DeMo.UI
                      vào Chi Tiết HD từ đó tính tổng tiền vào HD cần bán . Nên em đã tạp 1 trigger cho quá trình thêm này 
                      vào datatable của bài cho tiện trong quá trình sử dụng ở modul 3. */
                     //command = connection.CreateCommand();
-                    string insert = "insert into HoaDonNhap(IdNhap,NgayHD,NhanVienID) values(N'" + txthdid.Text + "','" + ngay + "', N'" + txthdnv.Text + "')" +
+                    string insert = "insert into HoaDonNhap(IdNhap,NhaCungCapID ,NgayHD,NhanVienID) values(N'" + txthdid.Text + "',N'"+txtncc.Text+"','" + ngay + "', N'" + txthdnv.Text + "')" +
                         "insert into NhapChiTiet (IdNhap,SanPhamID,SoLuong) values(N'" + txtctid.Text + "', N'" + txtctsp.Text + "', " + txtctsl.Text + ")";
                     //command.ExecuteNonQuery();
                     database.SQLConnection(insert);
@@ -225,6 +229,11 @@ namespace LoginForm_DeMo.UI
                     database.LoadDataGridView(LoadHD, "select * from HoaDonNhap");
                     MessageBox.Show(" Thêm Hóa đơn thành công !");
                 }
+               }
+              else
+                {
+                    MessageBox.Show("Nhà Cung Cấp không tồn tại không thể th");
+                }    
             }
             else
             {
@@ -240,8 +249,9 @@ namespace LoginForm_DeMo.UI
             i = LoadHD.CurrentRow.Index;
             txthdid.Text = LoadHD.Rows[i].Cells[0].Value.ToString();
             txthdnv.Text = LoadHD.Rows[i].Cells[1].Value.ToString();
-            txthddate.Text = LoadHD.Rows[i].Cells[2].Value.ToString();
-            txthdtien.Text = LoadHD.Rows[i].Cells[3].Value.ToString();
+            txtncc.Text = LoadHD.Rows[i].Cells[2].Value.ToString();
+            txthddate.Text = LoadHD.Rows[i].Cells[3].Value.ToString();
+            txthdtien.Text = LoadHD.Rows[i].Cells[4].Value.ToString();
         }
 
         private void LoadCT_CellContentClick(object sender, DataGridViewCellEventArgs e)

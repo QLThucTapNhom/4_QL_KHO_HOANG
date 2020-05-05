@@ -34,6 +34,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.txthdtim = new System.Windows.Forms.ComboBox();
             this.button5 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -63,6 +64,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtctsp = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.txtcttim = new System.Windows.Forms.ComboBox();
             this.btnTimCT = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
@@ -76,8 +78,6 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.LoadCT = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
-            this.txthdtim = new System.Windows.Forms.ComboBox();
-            this.txtcttim = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -169,6 +169,14 @@
             this.panel13.Size = new System.Drawing.Size(256, 35);
             this.panel13.TabIndex = 52;
             // 
+            // txthdtim
+            // 
+            this.txthdtim.FormattingEnabled = true;
+            this.txthdtim.Location = new System.Drawing.Point(15, 9);
+            this.txthdtim.Name = "txthdtim";
+            this.txthdtim.Size = new System.Drawing.Size(121, 21);
+            this.txthdtim.TabIndex = 31;
+            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -209,7 +217,7 @@
             // 
             this.panel9.Controls.Add(this.label2);
             this.panel9.Controls.Add(this.txthdnv);
-            this.panel9.Location = new System.Drawing.Point(6, 74);
+            this.panel9.Location = new System.Drawing.Point(6, 65);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(256, 35);
             this.panel9.TabIndex = 49;
@@ -447,6 +455,14 @@
             this.panel6.Size = new System.Drawing.Size(235, 35);
             this.panel6.TabIndex = 45;
             // 
+            // txtcttim
+            // 
+            this.txtcttim.FormattingEnabled = true;
+            this.txtcttim.Location = new System.Drawing.Point(12, 7);
+            this.txtcttim.Name = "txtcttim";
+            this.txtcttim.Size = new System.Drawing.Size(121, 21);
+            this.txtcttim.TabIndex = 31;
+            // 
             // btnTimCT
             // 
             this.btnTimCT.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -566,22 +582,6 @@
             this.label7.Size = new System.Drawing.Size(121, 25);
             this.label7.TabIndex = 48;
             this.label7.Text = "Xuất Hàng";
-            // 
-            // txthdtim
-            // 
-            this.txthdtim.FormattingEnabled = true;
-            this.txthdtim.Location = new System.Drawing.Point(15, 9);
-            this.txthdtim.Name = "txthdtim";
-            this.txthdtim.Size = new System.Drawing.Size(121, 21);
-            this.txthdtim.TabIndex = 31;
-            // 
-            // txtcttim
-            // 
-            this.txtcttim.FormattingEnabled = true;
-            this.txtcttim.Location = new System.Drawing.Point(12, 7);
-            this.txtcttim.Name = "txtcttim";
-            this.txtcttim.Size = new System.Drawing.Size(121, 21);
-            this.txtcttim.TabIndex = 31;
             // 
             // XuatHang
             // 
