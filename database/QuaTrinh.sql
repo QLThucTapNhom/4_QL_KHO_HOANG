@@ -244,3 +244,44 @@ BEGIN
   DELETE FROM dbo.NhaCungCap WHERE NhaCungCapID=@MaNCC
    
 END
+
+-- Xóa Sản phẩm (xóa luôn cả chi tiết hóa đơn của nhập hàng này)
+
+create proc Del_SP @Masp nvarchar(128) 
+as
+begin
+    delete from NhapChiTiet where SanPhamID = @Masp
+	delete from SanPham where SanPhamID = @Masp
+
+end
+
+	/*Tạo Report Xuất Hóa Don*/
+
+	
+
+	create proc XuatHoadon (@MaHD nvarchar(128) )
+	as
+	begin
+	select SanPham.TenSanPham,SanPham.ThoiGianBaoHanh,HoaDonXuat.IdXuat,HoaDonXuat.NgayHD,HoaDonXuat.Tong,
+	XuatChiTiet.DonGia,XuatChiTiet.SoLuong
+	from HoaDonXuat,XuatChiTiet,SanPham
+	where HoaDonXuat.IdXuat=XuatChiTiet.IdXuat and SanPham.SanPhamID=XuatChiTiet.SanPhamID and HoaDonXuat.IdXuat=@MaHD
+	
+	end
+
+
+	exec XuatHoadon N'001'
+
+	---nhập hóa đơn
+	
+	create proc NhapHoadon (@MaHD nvarchar(128) )
+	as
+	begin
+	select NhaCungCap.TenNhaCungCap,NhaCungCap.DiaChi,NhaCungCap.SoDienThoai,HoaDonNhap.NgayHD,HoaDonNhap.IdNhap,SanPham.TenSanPham,SanPham.DonGiaSanPham,SanPham.ThoiGianBaoHanh,
+	NhapChiTiet.SoLuong,HoaDonNhap.Tong
+	from NhaCungCap,HoaDonNhap,NhapChiTiet,SanPham
+	where NhaCungCap.NhaCungCapID=SanPham.NhaCungCapID and SanPham.SanPhamID=NhapChiTiet.SanPhamID and HoaDonNhap.IdNhap=NhapChiTiet.IdNhap and HoaDonNhap.IdNhap=@MaHD
+	
+	end
+	drop proc NhapHoadon
+	exec NhapHoadon N'002'

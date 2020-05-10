@@ -164,5 +164,11 @@ namespace LoginForm_DeMo.UI
         {
 
         }
+
+        private void buttonAll_Click(object sender, EventArgs e)
+        {
+            database.LoadDataGridView(dataGridViewNCC, "SELECT * FROM dbo.NhaCungCap");
+
+        }
     }
 }

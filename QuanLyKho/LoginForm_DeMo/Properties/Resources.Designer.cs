@@ -113,6 +113,16 @@ namespace LoginForm_DeMo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap afsadfdafdfaf {
+            get {
+                object obj = ResourceManager.GetObject("afsadfdafdfaf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap books_icon {
             get {
                 object obj = ResourceManager.GetObject("books-icon", resourceCulture);
@@ -283,9 +293,29 @@ namespace LoginForm_DeMo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Windows_Turn_Off_icon {
+            get {
+                object obj = ResourceManager.GetObject("Windows-Turn-Off-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap www {
             get {
                 object obj = ResourceManager.GetObject("www", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap xanh {
+            get {
+                object obj = ResourceManager.GetObject("xanh", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

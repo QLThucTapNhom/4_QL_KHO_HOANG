@@ -166,5 +166,30 @@ namespace LoginForm_DeMo
             }
             hh.Show();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            txtadmin.Text = _tenTK.Trim();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtadmin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

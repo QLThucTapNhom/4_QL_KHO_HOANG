@@ -94,7 +94,9 @@ namespace LoginForm_DeMo.UI
             }
             else
             {
-                database.LoadDataGridView(DanhMuc, "select * from dbo.SanPham");
+                database.LoadDataGridView(DanhMuc, "exec Del_SP @Masp ='"+txtid.Text.Trim()+"'");
+                string load = "SELECT * FROM SanPham ";
+                database.LoadDataGridView(DanhMuc,load);
                 MessageBox.Show("Xóa sản Phẩm thành công !");
 
             }
@@ -123,7 +125,7 @@ namespace LoginForm_DeMo.UI
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+                
             string idsp = txtid.Text.Trim();
             bool check = database.Check(idsp, "select SanPhamID from SanPham  ");
           if(check==false)

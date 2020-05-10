@@ -292,5 +292,23 @@ namespace LoginForm_DeMo.UI
             txtcttim.Text = "";
            
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (txthdid.Text == "")
+            {
+                MessageBox.Show("Chưa có hóa đơn cần in");
+            }
+            else
+            {
+                RPxuat rp = new RPxuat(txthdid.Text);
+                rp.Show();
+            }
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -292,5 +292,18 @@ namespace LoginForm_DeMo.UI
             txtctgia.Text = "";
             txtcttim.Text = "";
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (txthdid.Text=="")
+            {
+                MessageBox.Show("Chưa có Hóa Đơn cần in");
+            }
+            else
+            {
+                RPNhap rr = new RPNhap(txthdid.Text.Trim());
+                rr.Show();
+            }    
+        }
     }
 }
